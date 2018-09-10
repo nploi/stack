@@ -82,10 +82,19 @@ void Game::printBlocks(int top) {
             break;
         }
     }
-    util::gotoxy(15, top);
-    cout << endl << "\t\t[PRESS SPACE]";
-    cout << endl << "\t\t[YOUR SCORE: " << arrBlock.size() - 1 << "]" << endl;
-    cout << "_________________________________________________\n";
+    util::gotoxy(0, top + 1);
+    cout << "███████████████████████████████████████████████████\n";
+    util::gotoxy(59, 10);
+    cout << "[PRESS SPACE]\n";
+    util::gotoxy(55, 11);
+    cout << "╔══════════════════╗\n";
+    util::gotoxy(55, 12);
+    cout << "║YOUR SCORE:       ║" << endl;
+    util::gotoxy(55, 13);
+    cout << "╚══════════════════╝\n";
+    util::gotoxy(70, 12);
+    cout << Color::color(Color::Code::FG_WHITE);
+    cout << arrBlock.size() - 1;
 }
 
 void Game::start() {

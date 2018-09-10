@@ -6,5 +6,6 @@ int main() {
     system("clear");
     Game game;
     game.start();
+
     return 0;
 }
