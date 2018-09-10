@@ -1,2 +1,2 @@
 make -j4
-./stack
+./Stack
