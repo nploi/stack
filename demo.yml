@@ -1,0 +1,1959 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/loinp/Stack_game
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 150
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 39
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 563
+    content: "\e]0;loinp@loinp:~/Stack_game\a\e]7;file://loinp/home/loinp/Stack_game\a\e]0;loinp@loinp: ~/Stack_game\a\e[01;32mloinp@loinp\e[00m:\e[01;34m~/Stack_game\e[01;31m(master)\e[00m$ "
+  - delay: 2053
+    content: s
+  - delay: 109
+    content: h
+  - delay: 179
+    content: ' '
+  - delay: 148
+    content: r
+  - delay: 169
+    content: u
+  - delay: 119
+    content: 'n'
+  - delay: 348
+    content: .
+  - delay: 188
+    content: s
+  - delay: 119
+    content: h
+  - delay: 546
+    content: "\r\n"
+  - delay: 25
+    content: "-- Configuring done\r\n"
+  - delay: 5
+    content: "-- Generating done\r\n"
+  - delay: 5
+    content: "-- Build files have been written to: /home/loinp/Stack_game\r\n"
+  - delay: 47
+    content: "\e[35m\e[1mScanning dependencies of target Stack\e[0m\r\n"
+  - delay: 17
+    content: "[ 20%] \e[32mBuilding CXX object CMakeFiles/Stack.dir/game.cpp.o\e[0m\r\n"
+  - delay: 552
+    content: "[ 40%] \e[32m\e[1mLinking CXX executable Stack\e[0m\r\n"
+  - delay: 92
+    content: "[100%] Built target Stack\r\n"
+  - delay: 16
+    content: "\e[3J\e[H\e[2J\e[3J\e[H\e[2J\e[21;15f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 0]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[20;30f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[20;29f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[20;28f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;49f\e[0m \r\n"
+  - delay: 41
+    content: "\e[20;27f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[20;26f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[20;25f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[20;24f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[20;23f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[20;22f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[20;21f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[20;20f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;41f\e[0m \r\n"
+  - delay: 41
+    content: "\e[20;19f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[20;18f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[20;17f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;38f\e[0m \r\n"
+  - delay: 40
+    content: "\e[20;16f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[20;15f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[20;14f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;35f\e[0m \r\n\e[3J\e[H\e[2J\e[20;14f\e[0m                     \e[20;15f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;15f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 1]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[19;0f\e[94m███████████████████\r\n"
+  - delay: 40
+    content: "\e[19;1f\e[94m███████████████████\r\n"
+  - delay: 40
+    content: "\e[19;2f\e[94m███████████████████\r\n\e[19;1f\e[0m \r\n"
+  - delay: 40
+    content: "\e[19;3f\e[94m███████████████████\r\n\e[19;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[19;4f\e[94m███████████████████\r\n\e[19;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[19;5f\e[94m███████████████████\r\n\e[19;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[19;6f\e[94m███████████████████\r\n\e[19;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[19;7f\e[94m███████████████████\r\n\e[19;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[19;8f\e[94m███████████████████\r\n\e[19;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[19;9f\e[94m███████████████████\r\n\e[19;8f\e[0m \r\n"
+  - delay: 41
+    content: "\e[19;10f\e[94m███████████████████\r\n\e[19;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[19;11f\e[94m███████████████████\r\n\e[19;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[19;12f\e[94m███████████████████\r\n\e[19;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[19;13f\e[94m███████████████████\r\n\e[19;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[19;14f\e[94m███████████████████\r\n\e[19;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[19;15f\e[94m███████████████████\r\n\e[19;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[19;16f\e[94m███████████████████\r\n\e[19;15f\e[0m \r\n\e[3J\e[H\e[2J\e[19;16f\e[0m                    \e[19;16f\e[94m██████████████████\r\n\e[20;15f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;15f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 2]\r\n_________________________________________________\r\n"
+  - delay: 41
+    content: "\e[18;32f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[18;31f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[18;30f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[18;29f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[18;28f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[18;27f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[18;26f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[18;25f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;44f\e[0m \r\n"
+  - delay: 41
+    content: "\e[18;24f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[18;23f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[18;22f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[18;21f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[18;20f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[18;19f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;38f\e[0m \r\n"
+  - delay: 40
+    content: "\e[18;18f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[18;17f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[18;16f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;35f\e[0m \r\n\e[3J\e[H\e[2J\e[18;16f\e[0m                   \e[18;16f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;16f\e[94m██████████████████\r\n\e[20;15f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;15f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 3]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[17;0f\e[93m██████████████████\r\n"
+  - delay: 40
+    content: "\e[17;1f\e[93m██████████████████\r\n"
+  - delay: 40
+    content: "\e[17;2f\e[93m██████████████████\r\n\e[17;1f\e[0m \r\n"
+  - delay: 41
+    content: "\e[17;3f\e[93m██████████████████\r\n\e[17;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[17;4f\e[93m██████████████████\r\n\e[17;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[17;5f\e[93m██████████████████\r\n\e[17;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[17;6f\e[93m██████████████████\r\n\e[17;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[17;7f\e[93m██████████████████\r\n\e[17;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[17;8f\e[93m██████████████████\r\n\e[17;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[17;9f\e[93m██████████████████\r\n\e[17;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[17;10f\e[93m██████████████████\r\n\e[17;9f\e[0m \r\n"
+  - delay: 41
+    content: "\e[17;11f\e[93m██████████████████\r\n\e[17;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[17;12f\e[93m██████████████████\r\n\e[17;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[17;13f\e[93m██████████████████\r\n\e[17;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[17;14f\e[93m██████████████████\r\n\e[17;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[17;15f\e[93m██████████████████\r\n\e[17;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[17;16f\e[93m██████████████████\r\n\e[17;15f\e[0m \r\n\e[3J\e[H\e[2J\e[17;16f\e[0m                   \e[17;16f\e[93m██████████████████\r\n\e[18;16f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;16f\e[94m██████████████████\r\n\e[20;15f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;15f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 4]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[16;32f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;51f\e[0m \r\n"
+  - delay: 41
+    content: "\e[16;31f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[16;30f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[16;29f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[16;28f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[16;27f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[16;26f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[16;25f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[16;24f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;43f\e[0m \r\n"
+  - delay: 41
+    content: "\e[16;23f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[16;22f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[16;21f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[16;20f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[16;19f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;38f\e[0m \r\n"
+  - delay: 40
+    content: "\e[16;18f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[16;17f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[16;16f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;35f\e[0m \r\n"
+  - delay: 41
+    content: "\e[16;15f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;34f\e[0m \r\n\e[3J\e[H\e[2J\e[16;15f\e[0m                   \e[16;16f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[17;16f\e[93m██████████████████\r\n\e[18;16f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;16f\e[94m██████████████████\r\n\e[20;15f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;15f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 5]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[15;0f\e[92m█████████████████\r\n"
+  - delay: 40
+    content: "\e[15;1f\e[92m█████████████████\r\n"
+  - delay: 40
+    content: "\e[15;2f\e[92m█████████████████\r\n\e[15;1f\e[0m \r\n"
+  - delay: 40
+    content: "\e[15;3f\e[92m█████████████████\r\n\e[15;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[15;4f\e[92m█████████████████\r\n\e[15;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[15;5f\e[92m█████████████████\r\n\e[15;4f\e[0m \r\n"
+  - delay: 41
+    content: "\e[15;6f\e[92m█████████████████\r\n\e[15;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[15;7f\e[92m█████████████████\r\n\e[15;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[15;8f\e[92m█████████████████\r\n\e[15;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[15;9f\e[92m█████████████████\r\n\e[15;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[15;10f\e[92m█████████████████\r\n\e[15;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[15;11f\e[92m█████████████████\r\n\e[15;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[15;12f\e[92m█████████████████\r\n\e[15;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[15;13f\e[92m█████████████████\r\n\e[15;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[15;14f\e[92m█████████████████\r\n\e[15;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[15;15f\e[92m█████████████████\r\n\e[15;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[15;16f\e[92m█████████████████\r\n\e[15;15f\e[0m \r\n"
+  - delay: 40
+    content: "\e[15;17f\e[92m█████████████████\r\n\e[15;16f\e[0m \r\n\e[3J\e[H\e[2J\e[15;17f\e[0m                  \e[15;17f\e[92m████████████████\r\n\e[16;16f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[17;16f\e[93m██████████████████\r\n\e[18;16f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;16f\e[94m██████████████████\r\n\e[20;15f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;15f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 6]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[14;34f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[14;33f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[14;32f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;49f\e[0m \r\n"
+  - delay: 41
+    content: "\e[14;31f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[14;30f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[14;29f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[14;28f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[14;27f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[14;26f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[14;25f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[14;24f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;41f\e[0m \r\n"
+  - delay: 41
+    content: "\e[14;23f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[14;22f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[14;21f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;38f\e[0m \r\n"
+  - delay: 40
+    content: "\e[14;20f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[14;19f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[14;18f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[14;17f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;34f\e[0m \r\n\e[3J\e[H\e[2J\e[14;17f\e[0m                 \e[14;17f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[15;17f\e[92m████████████████\r\n\e[16;16f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[17;16f\e[93m██████████████████\r\n\e[18;16f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;16f\e[94m██████████████████\r\n\e[20;15f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;15f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 7]\r\n_________________________________________________\r\n"
+  - delay: 41
+    content: "\e[13;0f\e[91m████████████████\r\n"
+  - delay: 40
+    content: "\e[13;1f\e[91m████████████████\r\n"
+  - delay: 40
+    content: "\e[13;2f\e[91m████████████████\r\n\e[13;1f\e[0m \r\n"
+  - delay: 40
+    content: "\e[13;3f\e[91m████████████████\r\n\e[13;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[13;4f\e[91m████████████████\r\n\e[13;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[13;5f\e[91m████████████████\r\n\e[13;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[13;6f\e[91m████████████████\r\n\e[13;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[13;7f\e[91m████████████████\r\n\e[13;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[13;8f\e[91m████████████████\r\n\e[13;7f\e[0m \r\n"
+  - delay: 41
+    content: "\e[13;9f\e[91m████████████████\r\n\e[13;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[13;10f\e[91m████████████████\r\n\e[13;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[13;11f\e[91m████████████████\r\n\e[13;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[13;12f\e[91m████████████████\r\n\e[13;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[13;13f\e[91m████████████████\r\n\e[13;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[13;14f\e[91m████████████████\r\n\e[13;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[13;15f\e[91m████████████████\r\n\e[13;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[13;16f\e[91m████████████████\r\n\e[13;15f\e[0m \r\n"
+  - delay: 41
+    content: "\e[13;17f\e[91m████████████████\r\n\e[13;16f\e[0m \r\n\e[3J\e[H\e[2J\e[13;17f\e[0m                 \e[13;17f\e[91m████████████████\r\n\e[14;17f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[15;17f\e[92m████████████████\r\n\e[16;16f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[17;16f\e[93m██████████████████\r\n\e[18;16f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;16f\e[94m██████████████████\r\n\e[20;15f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;15f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 8]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[12;34f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[12;33f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[12;32f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[12;31f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[12;30f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;47f\e[0m \r\n"
+  - delay: 41
+    content: "\e[12;29f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[12;28f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[12;27f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[12;26f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[12;25f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[12;24f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[12;23f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[12;22f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;39f\e[0m \r\n"
+  - delay: 41
+    content: "\e[12;21f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;38f\e[0m \r\n"
+  - delay: 40
+    content: "\e[12;20f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[12;19f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[12;18f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[12;17f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;34f\e[0m \r\n\e[3J\e[H\e[2J\e[12;17f\e[0m                 \e[12;17f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[13;17f\e[91m████████████████\r\n\e[14;17f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[15;17f\e[92m████████████████\r\n\e[16;16f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[17;16f\e[93m██████████████████\r\n\e[18;16f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;16f\e[94m██████████████████\r\n\e[20;15f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;15f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 9]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[11;0f\e[90m████████████████\r\n"
+  - delay: 41
+    content: "\e[11;1f\e[90m████████████████\r\n"
+  - delay: 40
+    content: "\e[11;2f\e[90m████████████████\r\n\e[11;1f\e[0m \r\n"
+  - delay: 40
+    content: "\e[11;3f\e[90m████████████████\r\n\e[11;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[11;4f\e[90m████████████████\r\n\e[11;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[11;5f\e[90m████████████████\r\n\e[11;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[11;6f\e[90m████████████████\r\n\e[11;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[11;7f\e[90m████████████████\r\n\e[11;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[11;8f\e[90m████████████████\r\n\e[11;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[11;9f\e[90m████████████████\r\n\e[11;8f\e[0m \r\n"
+  - delay: 41
+    content: "\e[11;10f\e[90m████████████████\r\n\e[11;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[11;11f\e[90m████████████████\r\n\e[11;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[11;12f\e[90m████████████████\r\n\e[11;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[11;13f\e[90m████████████████\r\n\e[11;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[11;14f\e[90m████████████████\r\n\e[11;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[11;15f\e[90m████████████████\r\n\e[11;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[11;16f\e[90m████████████████\r\n\e[11;15f\e[0m \r\n"
+  - delay: 40
+    content: "\e[11;17f\e[90m████████████████\r\n\e[11;16f\e[0m \r\n\e[3J\e[H\e[2J\e[11;17f\e[0m                 \e[11;17f\e[90m████████████████\r\n\e[12;17f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[13;17f\e[91m████████████████\r\n\e[14;17f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[15;17f\e[92m████████████████\r\n\e[16;16f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[17;16f\e[93m██████████████████\r\n\e[18;16f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;16f\e[94m██████████████████\r\n\e[20;15f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;15f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 10]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;34f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;33f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;32f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;31f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;30f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;29f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;28f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;27f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;26f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;25f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;24f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;23f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;21f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;38f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;20f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;19f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;18f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;17f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;34f\e[0m \r\n\e[3J\e[H\e[2J\e[10;17f\e[0m                 \e[11;17f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;17f\e[90m████████████████\r\n\e[13;17f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;17f\e[91m████████████████\r\n\e[15;17f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;17f\e[92m████████████████\r\n\e[17;16f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;16f\e[93m██████████████████\r\n\e[19;16f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;16f\e[94m██████████████████\r\n\e[21;15f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 11]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;0f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;1f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;2f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;1f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;3f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;4f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;5f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;6f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;7f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;8f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;9f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;10f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;9f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;11f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;12f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;13f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;14f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;15f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;16f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;15f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;17f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;16f\e[0m \r\n\e[3J\e[H\e[2J\e[10;17f\e[0m                 \e[11;17f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;17f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[13;17f\e[90m████████████████\r\n\e[14;17f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[15;17f\e[91m████████████████\r\n\e[16;17f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[17;17f\e[92m████████████████\r\n\e[18;16f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;16f\e[93m██████████████████\r\n\e[20;16f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;16f\e[94m██████████████████\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 12]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;34f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;33f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;32f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;31f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;30f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;29f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;28f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;45f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;27f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;26f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;25f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;24f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;23f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;21f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;38f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;20f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;19f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;18f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;17f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;34f\e[0m \r\n\e[3J\e[H\e[2J\e[10;17f\e[0m                 \e[11;17f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;17f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[13;17f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;17f\e[90m████████████████\r\n\e[15;17f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;17f\e[91m████████████████\r\n\e[17;17f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;17f\e[92m████████████████\r\n\e[19;16f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;16f\e[93m██████████████████\r\n\e[21;16f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 13]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;0f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;1f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;2f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;1f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;3f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;4f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;5f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;6f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;7f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;8f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;9f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;10f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;11f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;12f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;13f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;14f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;15f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;16f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;15f\e[0m \r\n\e[3J\e[H\e[2J\e[10;16f\e[0m                 \e[11;17f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;17f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[13;17f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;17f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[15;17f\e[90m████████████████\r\n\e[16;17f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[17;17f\e[91m████████████████\r\n\e[18;17f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;17f\e[92m████████████████\r\n\e[20;16f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;16f\e[93m██████████████████\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 14]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;35f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;51f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;34f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;33f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;32f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;31f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;30f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;29f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;28f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;27f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;26f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;42f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;25f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;24f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;23f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;38f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;21f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;20f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;19f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;18f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;34f\e[0m \r\n\e[3J\e[H\e[2J\e[10;18f\e[0m                \e[11;18f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;17f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[13;17f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;17f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[15;17f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;17f\e[90m████████████████\r\n\e[17;17f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;17f\e[91m████████████████\r\n\e[19;17f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;17f\e[92m████████████████\r\n\e[21;16f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 15]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;0f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;1f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;2f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;1f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;3f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;4f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;5f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;4f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;6f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;7f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;8f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;9f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;10f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;11f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;10f\e[0m \r\n"
+  - delay: 44
+    content: "\e[10;12f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;11f\e[0m \r\n"
+  - delay: 36
+    content: "\e[10;13f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;12f\e[0m \r\n"
+  - delay: 39
+    content: "\e[10;14f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;15f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;16f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;15f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;17f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;16f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;18f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;17f\e[0m \r\n\e[3J\e[H\e[2J\e[10;18f\e[0m               \e[11;18f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;18f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[13;17f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;17f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[15;17f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;17f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[17;17f\e[90m████████████████\r\n\e[18;17f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;17f\e[91m████████████████\r\n\e[20;17f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;17f\e[92m████████████████\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 16]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;36f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;35f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;50f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;34f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;33f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;32f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;31f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;30f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;29f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;28f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;27f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;42f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;26f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;25f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;24f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;23f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;38f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;21f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;20f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;35f\e[0m \r\n\e[3J\e[H\e[2J\e[10;20f\e[0m               \e[11;20f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;18f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[13;18f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;17f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[15;17f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;17f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[17;17f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;17f\e[90m████████████████\r\n\e[19;17f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;17f\e[91m████████████████\r\n\e[21;17f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 17]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;0f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;1f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;2f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;1f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;3f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;4f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;5f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;6f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;5f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;7f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;8f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;9f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;10f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;11f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;12f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;13f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;14f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;13f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;15f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;16f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;15f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;17f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;16f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;18f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;17f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;19f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;18f\e[0m \r\n\e[3J\e[H\e[2J\e[10;19f\e[0m             \e[11;20f\e[35m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;20f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[13;18f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;18f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[15;17f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;17f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[17;17f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;17f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;17f\e[90m████████████████\r\n\e[20;17f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;17f\e[91m████████████████\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 18]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;39f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;38f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;37f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;36f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;35f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;34f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;46f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;33f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;32f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;31f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;30f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;29f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;28f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;27f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;26f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;38f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;25f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;24f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;23f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;34f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;21f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;33f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;20f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;32f\e[0m \r\n\e[3J\e[H\e[2J\e[10;20f\e[0m            \e[11;20f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[12;20f\e[35m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[13;20f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;18f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[15;18f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;17f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[17;17f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;17f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;17f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;17f\e[90m████████████████\r\n\e[21;17f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 19]\r\n_________________________________________________\r\n"
+  - delay: 41
+    content: "\e[10;0f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;1f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;2f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;1f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;3f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;4f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;5f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;6f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;7f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;8f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;7f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;9f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;10f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;11f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;12f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;13f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;14f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;15f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;16f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;15f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;17f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;16f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;18f\e[34m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[10;17f\e[0m \r\n\e[3J\e[H\e[2J\e[10;18f\e[0m            \e[11;20f\e[34m▓▓▓▓▓▓▓▓▓\r\n\e[12;20f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[13;20f\e[35m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;20f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[15;18f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;18f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[17;17f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;17f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;17f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;17f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;17f\e[90m████████████████\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 20]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;41f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;40f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;39f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;38f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;48f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;37f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;36f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;35f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;34f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;33f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;32f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;31f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;30f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;40f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;29f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;28f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;38f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;27f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;26f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;25f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;24f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;34f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;23f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;33f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;32f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;21f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;31f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;20f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[10;30f\e[0m \r\n\e[3J\e[H\e[2J\e[10;20f\e[0m          \e[11;20f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[12;20f\e[34m▓▓▓▓▓▓▓▓▓\r\n\e[13;20f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[14;20f\e[35m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[15;20f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;18f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[17;18f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;17f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;17f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;17f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;17f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 21]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;0f\e[33m▓▓▓▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;1f\e[33m▓▓▓▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;2f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;1f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;3f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;4f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;3f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;5f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;6f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;7f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;8f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;9f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;10f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;11f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;12f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;11f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;13f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;14f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;15f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;16f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;15f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;17f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;16f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;18f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;17f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;19f\e[33m▓▓▓▓▓▓▓▓▓\r\n\e[10;18f\e[0m \r\n\e[3J\e[H\e[2J\e[10;19f\e[0m          \e[11;20f\e[33m▓▓▓▓▓▓▓▓\r\n\e[12;20f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[13;20f\e[34m▓▓▓▓▓▓▓▓▓\r\n\e[14;20f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[15;20f\e[35m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;20f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[17;18f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;18f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;17f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;17f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;17f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 22]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;42f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;41f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;40f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;39f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;38f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;37f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;46f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;36f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;35f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;34f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;33f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;32f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;31f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;30f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;29f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;38f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;28f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;37f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;27f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;26f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;25f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;34f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;24f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;33f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;23f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;32f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;31f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;21f\e[92m▓▓▓▓▓▓▓▓\r\n\e[10;30f\e[0m \r\n\e[3J\e[H\e[2J\e[10;21f\e[0m         \e[11;21f\e[92m▓▓▓▓▓▓▓\r\n\e[12;20f\e[33m▓▓▓▓▓▓▓▓\r\n\e[13;20f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[14;20f\e[34m▓▓▓▓▓▓▓▓▓\r\n\e[15;20f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[16;20f\e[35m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[17;20f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;18f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;18f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;17f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;17f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 23]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;0f\e[32m▓▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;1f\e[32m▓▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;2f\e[32m▓▓▓▓▓▓▓\r\n\e[10;1f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;3f\e[32m▓▓▓▓▓▓▓\r\n\e[10;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;4f\e[32m▓▓▓▓▓▓▓\r\n\e[10;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;5f\e[32m▓▓▓▓▓▓▓\r\n\e[10;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;6f\e[32m▓▓▓▓▓▓▓\r\n\e[10;5f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;7f\e[32m▓▓▓▓▓▓▓\r\n\e[10;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;8f\e[32m▓▓▓▓▓▓▓\r\n\e[10;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;9f\e[32m▓▓▓▓▓▓▓\r\n\e[10;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;10f\e[32m▓▓▓▓▓▓▓\r\n\e[10;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;11f\e[32m▓▓▓▓▓▓▓\r\n\e[10;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;12f\e[32m▓▓▓▓▓▓▓\r\n\e[10;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;13f\e[32m▓▓▓▓▓▓▓\r\n\e[10;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;14f\e[32m▓▓▓▓▓▓▓\r\n\e[10;13f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;15f\e[32m▓▓▓▓▓▓▓\r\n\e[10;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;16f\e[32m▓▓▓▓▓▓▓\r\n\e[10;15f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;17f\e[32m▓▓▓▓▓▓▓\r\n\e[10;16f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;18f\e[32m▓▓▓▓▓▓▓\r\n\e[10;17f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;19f\e[32m▓▓▓▓▓▓▓\r\n\e[10;18f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;20f\e[32m▓▓▓▓▓▓▓\r\n\e[10;19f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;21f\e[32m▓▓▓▓▓▓▓\r\n\e[10;20f\e[0m \r\n\e[3J\e[H\e[2J\e[10;21f\e[0m        \e[11;21f\e[32m▓▓▓▓▓▓▓\r\n\e[12;21f\e[92m▓▓▓▓▓▓▓\r\n\e[13;20f\e[33m▓▓▓▓▓▓▓▓\r\n\e[14;20f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[15;20f\e[34m▓▓▓▓▓▓▓▓▓\r\n\e[16;20f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[17;20f\e[35m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;20f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;18f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;18f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;17f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 24]\r\n_________________________________________________\r\n"
+  - delay: 41
+    content: "\e[10;43f\e[91m▓▓▓▓▓▓▓\r\n\e[10;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;42f\e[91m▓▓▓▓▓▓▓\r\n\e[10;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;41f\e[91m▓▓▓▓▓▓▓\r\n\e[10;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;40f\e[91m▓▓▓▓▓▓▓\r\n\e[10;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;39f\e[91m▓▓▓▓▓▓▓\r\n\e[10;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;38f\e[91m▓▓▓▓▓▓▓\r\n\e[10;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;37f\e[91m▓▓▓▓▓▓▓\r\n\e[10;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;36f\e[91m▓▓▓▓▓▓▓\r\n\e[10;44f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;35f\e[91m▓▓▓▓▓▓▓\r\n\e[10;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;34f\e[91m▓▓▓▓▓▓▓\r\n\e[10;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;33f\e[91m▓▓▓▓▓▓▓\r\n\e[10;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;32f\e[91m▓▓▓▓▓▓▓\r\n\e[10;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;31f\e[91m▓▓▓▓▓▓▓\r\n\e[10;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;30f\e[91m▓▓▓▓▓▓▓\r\n\e[10;38f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;29f\e[91m▓▓▓▓▓▓▓\r\n\e[10;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;28f\e[91m▓▓▓▓▓▓▓\r\n\e[10;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;27f\e[91m▓▓▓▓▓▓▓\r\n\e[10;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;26f\e[91m▓▓▓▓▓▓▓\r\n\e[10;34f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;25f\e[91m▓▓▓▓▓▓▓\r\n\e[10;33f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;24f\e[91m▓▓▓▓▓▓▓\r\n\e[10;32f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;23f\e[91m▓▓▓▓▓▓▓\r\n\e[10;31f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[91m▓▓▓▓▓▓▓\r\n\e[10;30f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;21f\e[91m▓▓▓▓▓▓▓\r\n\e[10;29f\e[0m \r\n\e[3J\e[H\e[2J\e[10;21f\e[0m        \e[11;21f\e[91m▓▓▓▓▓▓▓\r\n\e[12;21f\e[32m▓▓▓▓▓▓▓\r\n\e[13;21f\e[92m▓▓▓▓▓▓▓\r\n\e[14;20f\e[33m▓▓▓▓▓▓▓▓\r\n\e[15;20f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[16;20f\e[34m▓▓▓▓▓▓▓▓▓\r\n\e[17;20f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[18;20f\e[35m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;20f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;18f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;18f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 25]\r\n_________________________________________________\r\n"
+  - delay: 41
+    content: "\e[10;0f\e[31m▓▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;1f\e[31m▓▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;2f\e[31m▓▓▓▓▓▓▓\r\n\e[10;1f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;3f\e[31m▓▓▓▓▓▓▓\r\n\e[10;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;4f\e[31m▓▓▓▓▓▓▓\r\n\e[10;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;5f\e[31m▓▓▓▓▓▓▓\r\n\e[10;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;6f\e[31m▓▓▓▓▓▓▓\r\n\e[10;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;7f\e[31m▓▓▓▓▓▓▓\r\n\e[10;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;8f\e[31m▓▓▓▓▓▓▓\r\n\e[10;7f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;9f\e[31m▓▓▓▓▓▓▓\r\n\e[10;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;10f\e[31m▓▓▓▓▓▓▓\r\n\e[10;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;11f\e[31m▓▓▓▓▓▓▓\r\n\e[10;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;12f\e[31m▓▓▓▓▓▓▓\r\n\e[10;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;13f\e[31m▓▓▓▓▓▓▓\r\n\e[10;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;14f\e[31m▓▓▓▓▓▓▓\r\n\e[10;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;15f\e[31m▓▓▓▓▓▓▓\r\n\e[10;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;16f\e[31m▓▓▓▓▓▓▓\r\n\e[10;15f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;17f\e[31m▓▓▓▓▓▓▓\r\n\e[10;16f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;18f\e[31m▓▓▓▓▓▓▓\r\n\e[10;17f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;19f\e[31m▓▓▓▓▓▓▓\r\n\e[10;18f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;20f\e[31m▓▓▓▓▓▓▓\r\n\e[10;19f\e[0m \r\n\e[3J\e[H\e[2J\e[10;20f\e[0m        \e[11;21f\e[31m▓▓▓▓▓▓\r\n\e[12;21f\e[91m▓▓▓▓▓▓▓\r\n\e[13;21f\e[32m▓▓▓▓▓▓▓\r\n\e[14;21f\e[92m▓▓▓▓▓▓▓\r\n\e[15;20f\e[33m▓▓▓▓▓▓▓▓\r\n\e[16;20f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[17;20f\e[34m▓▓▓▓▓▓▓▓▓\r\n\e[18;20f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[19;20f\e[35m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;20f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;18f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 26]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;44f\e[90m▓▓▓▓▓▓\r\n\e[10;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;43f\e[90m▓▓▓▓▓▓\r\n\e[10;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;42f\e[90m▓▓▓▓▓▓\r\n\e[10;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;41f\e[90m▓▓▓▓▓▓\r\n\e[10;48f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;40f\e[90m▓▓▓▓▓▓\r\n\e[10;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;39f\e[90m▓▓▓▓▓▓\r\n\e[10;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;38f\e[90m▓▓▓▓▓▓\r\n\e[10;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;37f\e[90m▓▓▓▓▓▓\r\n\e[10;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;36f\e[90m▓▓▓▓▓▓\r\n\e[10;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;35f\e[90m▓▓▓▓▓▓\r\n\e[10;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;34f\e[90m▓▓▓▓▓▓\r\n\e[10;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;33f\e[90m▓▓▓▓▓▓\r\n\e[10;40f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;32f\e[90m▓▓▓▓▓▓\r\n\e[10;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;31f\e[90m▓▓▓▓▓▓\r\n\e[10;38f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;30f\e[90m▓▓▓▓▓▓\r\n\e[10;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;29f\e[90m▓▓▓▓▓▓\r\n\e[10;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;28f\e[90m▓▓▓▓▓▓\r\n\e[10;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;27f\e[90m▓▓▓▓▓▓\r\n\e[10;34f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;26f\e[90m▓▓▓▓▓▓\r\n\e[10;33f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;25f\e[90m▓▓▓▓▓▓\r\n\e[10;32f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;24f\e[90m▓▓▓▓▓▓\r\n\e[10;31f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;23f\e[90m▓▓▓▓▓▓\r\n\e[10;30f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[90m▓▓▓▓▓▓\r\n\e[10;29f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;21f\e[90m▓▓▓▓▓▓\r\n\e[10;28f\e[0m \r\n\e[3J\e[H\e[2J\e[10;21f\e[0m       \e[11;21f\e[90m▓▓▓▓▓▓\r\n\e[12;21f\e[31m▓▓▓▓▓▓\r\n\e[13;21f\e[91m▓▓▓▓▓▓▓\r\n\e[14;21f\e[32m▓▓▓▓▓▓▓\r\n\e[15;21f\e[92m▓▓▓▓▓▓▓\r\n\e[16;20f\e[33m▓▓▓▓▓▓▓▓\r\n\e[17;20f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[18;20f\e[34m▓▓▓▓▓▓▓▓▓\r\n\e[19;20f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[20;20f\e[35m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;20f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 27]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;0f\e[30m▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;1f\e[30m▓▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;2f\e[30m▓▓▓▓▓▓\r\n\e[10;1f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;3f\e[30m▓▓▓▓▓▓\r\n\e[10;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;4f\e[30m▓▓▓▓▓▓\r\n\e[10;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;5f\e[30m▓▓▓▓▓▓\r\n\e[10;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;6f\e[30m▓▓▓▓▓▓\r\n\e[10;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;7f\e[30m▓▓▓▓▓▓\r\n\e[10;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;8f\e[30m▓▓▓▓▓▓\r\n\e[10;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;9f\e[30m▓▓▓▓▓▓\r\n\e[10;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;10f\e[30m▓▓▓▓▓▓\r\n\e[10;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;11f\e[30m▓▓▓▓▓▓\r\n\e[10;10f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;12f\e[30m▓▓▓▓▓▓\r\n\e[10;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;13f\e[30m▓▓▓▓▓▓\r\n\e[10;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;14f\e[30m▓▓▓▓▓▓\r\n\e[10;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;15f\e[30m▓▓▓▓▓▓\r\n\e[10;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;16f\e[30m▓▓▓▓▓▓\r\n\e[10;15f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;17f\e[30m▓▓▓▓▓▓\r\n\e[10;16f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;18f\e[30m▓▓▓▓▓▓\r\n\e[10;17f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;19f\e[30m▓▓▓▓▓▓\r\n\e[10;18f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;20f\e[30m▓▓▓▓▓▓\r\n\e[10;19f\e[0m \r\n\e[3J\e[H\e[2J\e[10;20f\e[0m       \e[11;21f\e[30m▓▓▓▓▓\r\n\e[12;21f\e[90m▓▓▓▓▓▓\r\n\e[13;21f\e[31m▓▓▓▓▓▓\r\n\e[14;21f\e[91m▓▓▓▓▓▓▓\r\n\e[15;21f\e[32m▓▓▓▓▓▓▓\r\n\e[16;21f\e[92m▓▓▓▓▓▓▓\r\n\e[17;20f\e[33m▓▓▓▓▓▓▓▓\r\n\e[18;20f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[19;20f\e[34m▓▓▓▓▓▓▓▓▓\r\n\e[20;20f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;20f\e[35m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 28]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;45f\e[97m▓▓▓▓▓\r\n\e[10;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;44f\e[97m▓▓▓▓▓\r\n\e[10;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;43f\e[97m▓▓▓▓▓\r\n\e[10;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;42f\e[97m▓▓▓▓▓\r\n\e[10;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;41f\e[97m▓▓▓▓▓\r\n\e[10;47f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;40f\e[97m▓▓▓▓▓\r\n\e[10;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;39f\e[97m▓▓▓▓▓\r\n\e[10;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;38f\e[97m▓▓▓▓▓\r\n\e[10;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;37f\e[97m▓▓▓▓▓\r\n\e[10;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;36f\e[97m▓▓▓▓▓\r\n\e[10;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;35f\e[97m▓▓▓▓▓\r\n\e[10;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;34f\e[97m▓▓▓▓▓\r\n\e[10;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;33f\e[97m▓▓▓▓▓\r\n\e[10;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;32f\e[97m▓▓▓▓▓\r\n\e[10;38f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;31f\e[97m▓▓▓▓▓\r\n\e[10;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;30f\e[97m▓▓▓▓▓\r\n\e[10;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;29f\e[97m▓▓▓▓▓\r\n\e[10;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;28f\e[97m▓▓▓▓▓\r\n\e[10;34f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;27f\e[97m▓▓▓▓▓\r\n\e[10;33f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;26f\e[97m▓▓▓▓▓\r\n\e[10;32f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;25f\e[97m▓▓▓▓▓\r\n\e[10;31f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;24f\e[97m▓▓▓▓▓\r\n\e[10;30f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;23f\e[97m▓▓▓▓▓\r\n\e[10;29f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[97m▓▓▓▓▓\r\n\e[10;28f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;21f\e[97m▓▓▓▓▓\r\n\e[10;27f\e[0m \r\n\e[3J\e[H\e[2J\e[10;21f\e[0m      \e[11;21f\e[97m▓▓▓▓▓\r\n\e[12;21f\e[30m▓▓▓▓▓\r\n\e[13;21f\e[90m▓▓▓▓▓▓\r\n\e[14;21f\e[31m▓▓▓▓▓▓\r\n\e[15;21f\e[91m▓▓▓▓▓▓▓\r\n\e[16;21f\e[32m▓▓▓▓▓▓▓\r\n\e[17;21f\e[92m▓▓▓▓▓▓▓\r\n\e[18;20f\e[33m▓▓▓▓▓▓▓▓\r\n\e[19;20f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[20;20f\e[34m▓▓▓▓▓▓▓▓▓\r\n\e[21;20f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 29]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;0f\e[0m▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;1f\e[0m▓▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;2f\e[0m▓▓▓▓▓\r\n\e[10;1f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;3f\e[0m▓▓▓▓▓\r\n\e[10;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;4f\e[0m▓▓▓▓▓\r\n\e[10;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;5f\e[0m▓▓▓▓▓\r\n\e[10;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;6f\e[0m▓▓▓▓▓\r\n\e[10;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;7f\e[0m▓▓▓▓▓\r\n\e[10;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;8f\e[0m▓▓▓▓▓\r\n\e[10;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;9f\e[0m▓▓▓▓▓\r\n\e[10;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;10f\e[0m▓▓▓▓▓\r\n\e[10;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;11f\e[0m▓▓▓▓▓\r\n\e[10;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;12f\e[0m▓▓▓▓▓\r\n\e[10;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;13f\e[0m▓▓▓▓▓\r\n\e[10;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;14f\e[0m▓▓▓▓▓\r\n\e[10;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;15f\e[0m▓▓▓▓▓\r\n\e[10;14f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;16f\e[0m▓▓▓▓▓\r\n\e[10;15f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;17f\e[0m▓▓▓▓▓\r\n\e[10;16f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;18f\e[0m▓▓▓▓▓\r\n\e[10;17f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;19f\e[0m▓▓▓▓▓\r\n\e[10;18f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;20f\e[0m▓▓▓▓▓\r\n\e[10;19f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;21f\e[0m▓▓▓▓▓\r\n\e[10;20f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[0m▓▓▓▓▓\r\n\e[10;21f\e[0m \r\n\e[3J\e[H\e[2J\e[10;22f\e[0m      \e[11;22f\e[0m▓▓▓▓\r\n\e[12;21f\e[97m▓▓▓▓▓\r\n\e[13;21f\e[30m▓▓▓▓▓\r\n\e[14;21f\e[90m▓▓▓▓▓▓\r\n\e[15;21f\e[31m▓▓▓▓▓▓\r\n\e[16;21f\e[91m▓▓▓▓▓▓▓\r\n\e[17;21f\e[32m▓▓▓▓▓▓▓\r\n\e[18;21f\e[92m▓▓▓▓▓▓▓\r\n\e[19;20f\e[33m▓▓▓▓▓▓▓▓\r\n\e[20;20f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[21;20f\e[34m▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 30]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;46f\e[37m▓▓▓▓\r\n\e[10;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;45f\e[37m▓▓▓▓\r\n\e[10;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;44f\e[37m▓▓▓▓\r\n\e[10;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;43f\e[37m▓▓▓▓\r\n\e[10;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;42f\e[37m▓▓▓▓\r\n\e[10;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;41f\e[37m▓▓▓▓\r\n\e[10;46f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;40f\e[37m▓▓▓▓\r\n\e[10;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;39f\e[37m▓▓▓▓\r\n\e[10;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;38f\e[37m▓▓▓▓\r\n\e[10;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;37f\e[37m▓▓▓▓\r\n\e[10;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;36f\e[37m▓▓▓▓\r\n\e[10;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;35f\e[37m▓▓▓▓\r\n\e[10;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;34f\e[37m▓▓▓▓\r\n\e[10;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;33f\e[37m▓▓▓▓\r\n\e[10;38f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;32f\e[37m▓▓▓▓\r\n\e[10;37f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;31f\e[37m▓▓▓▓\r\n\e[10;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;30f\e[37m▓▓▓▓\r\n\e[10;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;29f\e[37m▓▓▓▓\r\n\e[10;34f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;28f\e[37m▓▓▓▓\r\n\e[10;33f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;27f\e[37m▓▓▓▓\r\n\e[10;32f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;26f\e[37m▓▓▓▓\r\n\e[10;31f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;25f\e[37m▓▓▓▓\r\n\e[10;30f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;24f\e[37m▓▓▓▓\r\n\e[10;29f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;23f\e[37m▓▓▓▓\r\n\e[10;28f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[37m▓▓▓▓\r\n\e[10;27f\e[0m \r\n\e[3J\e[H\e[2J\e[10;22f\e[0m     \e[11;22f\e[37m▓▓▓▓\r\n\e[12;22f\e[0m▓▓▓▓\r\n\e[13;21f\e[97m▓▓▓▓▓\r\n\e[14;21f\e[30m▓▓▓▓▓\r\n\e[15;21f\e[90m▓▓▓▓▓▓\r\n\e[16;21f\e[31m▓▓▓▓▓▓\r\n\e[17;21f\e[91m▓▓▓▓▓▓▓\r\n\e[18;21f\e[32m▓▓▓▓▓▓▓\r\n\e[19;21f\e[92m▓▓▓▓▓▓▓\r\n\e[20;20f\e[33m▓▓▓▓▓▓▓▓\r\n\e[21;20f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 31]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;0f\e[96m▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;1f\e[96m▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;2f\e[96m▓▓▓▓\r\n\e[10;1f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;3f\e[96m▓▓▓▓\r\n\e[10;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;4f\e[96m▓▓▓▓\r\n\e[10;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;5f\e[96m▓▓▓▓\r\n\e[10;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;6f\e[96m▓▓▓▓\r\n\e[10;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;7f\e[96m▓▓▓▓\r\n\e[10;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;8f\e[96m▓▓▓▓\r\n\e[10;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;9f\e[96m▓▓▓▓\r\n\e[10;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;10f\e[96m▓▓▓▓\r\n\e[10;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;11f\e[96m▓▓▓▓\r\n\e[10;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;12f\e[96m▓▓▓▓\r\n\e[10;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;13f\e[96m▓▓▓▓\r\n\e[10;12f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;14f\e[96m▓▓▓▓\r\n\e[10;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;15f\e[96m▓▓▓▓\r\n\e[10;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;16f\e[96m▓▓▓▓\r\n\e[10;15f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;17f\e[96m▓▓▓▓\r\n\e[10;16f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;18f\e[96m▓▓▓▓\r\n\e[10;17f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;19f\e[96m▓▓▓▓\r\n\e[10;18f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;20f\e[96m▓▓▓▓\r\n\e[10;19f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;21f\e[96m▓▓▓▓\r\n\e[10;20f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;22f\e[96m▓▓▓▓\r\n\e[10;21f\e[0m \r\n\e[3J\e[H\e[2J\e[10;22f\e[0m     \e[11;22f\e[96m▓▓▓▓\r\n\e[12;22f\e[37m▓▓▓▓\r\n\e[13;22f\e[0m▓▓▓▓\r\n\e[14;21f\e[97m▓▓▓▓▓\r\n\e[15;21f\e[30m▓▓▓▓▓\r\n\e[16;21f\e[90m▓▓▓▓▓▓\r\n\e[17;21f\e[31m▓▓▓▓▓▓\r\n\e[18;21f\e[91m▓▓▓▓▓▓▓\r\n\e[19;21f\e[32m▓▓▓▓▓▓▓\r\n\e[20;21f\e[92m▓▓▓▓▓▓▓\r\n\e[21;20f\e[33m▓▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 32]\r\n_________________________________________________\r\n"
+  - delay: 38
+    content: "\e[10;46f\e[36m▓▓▓▓\r\n\e[10;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;45f\e[36m▓▓▓▓\r\n\e[10;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;44f\e[36m▓▓▓▓\r\n\e[10;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;43f\e[36m▓▓▓▓\r\n\e[10;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;42f\e[36m▓▓▓▓\r\n\e[10;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;41f\e[36m▓▓▓▓\r\n\e[10;46f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;40f\e[36m▓▓▓▓\r\n\e[10;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;39f\e[36m▓▓▓▓\r\n\e[10;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;38f\e[36m▓▓▓▓\r\n\e[10;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;37f\e[36m▓▓▓▓\r\n\e[10;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;36f\e[36m▓▓▓▓\r\n\e[10;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;35f\e[36m▓▓▓▓\r\n\e[10;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;34f\e[36m▓▓▓▓\r\n\e[10;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;33f\e[36m▓▓▓▓\r\n\e[10;38f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;32f\e[36m▓▓▓▓\r\n\e[10;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;31f\e[36m▓▓▓▓\r\n\e[10;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;30f\e[36m▓▓▓▓\r\n\e[10;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;29f\e[36m▓▓▓▓\r\n\e[10;34f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;28f\e[36m▓▓▓▓\r\n\e[10;33f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;27f\e[36m▓▓▓▓\r\n\e[10;32f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;26f\e[36m▓▓▓▓\r\n\e[10;31f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;25f\e[36m▓▓▓▓\r\n\e[10;30f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;24f\e[36m▓▓▓▓\r\n\e[10;29f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;23f\e[36m▓▓▓▓\r\n\e[10;28f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[36m▓▓▓▓\r\n\e[10;27f\e[0m \r\n\e[3J\e[H\e[2J\e[10;22f\e[0m     \e[11;22f\e[36m▓▓▓▓\r\n\e[12;22f\e[96m▓▓▓▓\r\n\e[13;22f\e[37m▓▓▓▓\r\n\e[14;22f\e[0m▓▓▓▓\r\n\e[15;21f\e[97m▓▓▓▓▓\r\n\e[16;21f\e[30m▓▓▓▓▓\r\n\e[17;21f\e[90m▓▓▓▓▓▓\r\n\e[18;21f\e[31m▓▓▓▓▓▓\r\n\e[19;21f\e[91m▓▓▓▓▓▓▓\r\n\e[20;21f\e[32m▓▓▓▓▓▓▓\r\n\e[21;21f\e[92m▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 33]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;0f\e[95m▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;1f\e[95m▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;2f\e[95m▓▓▓▓\r\n\e[10;1f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;3f\e[95m▓▓▓▓\r\n\e[10;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;4f\e[95m▓▓▓▓\r\n\e[10;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;5f\e[95m▓▓▓▓\r\n\e[10;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;6f\e[95m▓▓▓▓\r\n\e[10;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;7f\e[95m▓▓▓▓\r\n\e[10;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;8f\e[95m▓▓▓▓\r\n\e[10;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;9f\e[95m▓▓▓▓\r\n\e[10;8f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;10f\e[95m▓▓▓▓\r\n\e[10;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;11f\e[95m▓▓▓▓\r\n\e[10;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;12f\e[95m▓▓▓▓\r\n\e[10;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;13f\e[95m▓▓▓▓\r\n\e[10;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;14f\e[95m▓▓▓▓\r\n\e[10;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;15f\e[95m▓▓▓▓\r\n\e[10;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;16f\e[95m▓▓▓▓\r\n\e[10;15f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;17f\e[95m▓▓▓▓\r\n\e[10;16f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;18f\e[95m▓▓▓▓\r\n\e[10;17f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;19f\e[95m▓▓▓▓\r\n\e[10;18f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;20f\e[95m▓▓▓▓\r\n\e[10;19f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;21f\e[95m▓▓▓▓\r\n\e[10;20f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[95m▓▓▓▓\r\n\e[10;21f\e[0m \r\n\e[3J\e[H\e[2J\e[10;22f\e[0m     \e[11;22f\e[95m▓▓▓▓\r\n\e[12;22f\e[36m▓▓▓▓\r\n\e[13;22f\e[96m▓▓▓▓\r\n\e[14;22f\e[37m▓▓▓▓\r\n\e[15;22f\e[0m▓▓▓▓\r\n\e[16;21f\e[97m▓▓▓▓▓\r\n\e[17;21f\e[30m▓▓▓▓▓\r\n\e[18;21f\e[90m▓▓▓▓▓▓\r\n\e[19;21f\e[31m▓▓▓▓▓▓\r\n\e[20;21f\e[91m▓▓▓▓▓▓▓\r\n\e[21;21f\e[32m▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 34]\r\n_________________________________________________\r\n"
+  - delay: 41
+    content: "\e[10;46f\e[35m▓▓▓▓\r\n\e[10;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;45f\e[35m▓▓▓▓\r\n\e[10;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;44f\e[35m▓▓▓▓\r\n\e[10;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;43f\e[35m▓▓▓▓\r\n\e[10;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;42f\e[35m▓▓▓▓\r\n\e[10;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;41f\e[35m▓▓▓▓\r\n\e[10;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;40f\e[35m▓▓▓▓\r\n\e[10;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;39f\e[35m▓▓▓▓\r\n\e[10;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;38f\e[35m▓▓▓▓\r\n\e[10;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;37f\e[35m▓▓▓▓\r\n\e[10;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;36f\e[35m▓▓▓▓\r\n\e[10;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;35f\e[35m▓▓▓▓\r\n\e[10;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;34f\e[35m▓▓▓▓\r\n\e[10;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;33f\e[35m▓▓▓▓\r\n\e[10;38f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;32f\e[35m▓▓▓▓\r\n\e[10;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;31f\e[35m▓▓▓▓\r\n\e[10;36f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;30f\e[35m▓▓▓▓\r\n\e[10;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;29f\e[35m▓▓▓▓\r\n\e[10;34f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;28f\e[35m▓▓▓▓\r\n\e[10;33f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;27f\e[35m▓▓▓▓\r\n\e[10;32f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;26f\e[35m▓▓▓▓\r\n\e[10;31f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;25f\e[35m▓▓▓▓\r\n\e[10;30f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;24f\e[35m▓▓▓▓\r\n\e[10;29f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;23f\e[35m▓▓▓▓\r\n\e[10;28f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[35m▓▓▓▓\r\n\e[10;27f\e[0m \r\n\e[3J\e[H\e[2J\e[10;22f\e[0m     \e[11;22f\e[35m▓▓▓▓\r\n\e[12;22f\e[95m▓▓▓▓\r\n\e[13;22f\e[36m▓▓▓▓\r\n\e[14;22f\e[96m▓▓▓▓\r\n\e[15;22f\e[37m▓▓▓▓\r\n\e[16;22f\e[0m▓▓▓▓\r\n\e[17;21f\e[97m▓▓▓▓▓\r\n\e[18;21f\e[30m▓▓▓▓▓\r\n\e[19;21f\e[90m▓▓▓▓▓▓\r\n\e[20;21f\e[31m▓▓▓▓▓▓\r\n\e[21;21f\e[91m▓▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 35]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;0f\e[94m▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;1f\e[94m▓▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;2f\e[94m▓▓▓▓\r\n\e[10;1f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;3f\e[94m▓▓▓▓\r\n\e[10;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;4f\e[94m▓▓▓▓\r\n\e[10;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;5f\e[94m▓▓▓▓\r\n\e[10;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;6f\e[94m▓▓▓▓\r\n\e[10;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;7f\e[94m▓▓▓▓\r\n\e[10;6f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;8f\e[94m▓▓▓▓\r\n\e[10;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;9f\e[94m▓▓▓▓\r\n\e[10;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;10f\e[94m▓▓▓▓\r\n\e[10;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;11f\e[94m▓▓▓▓\r\n\e[10;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;12f\e[94m▓▓▓▓\r\n\e[10;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;13f\e[94m▓▓▓▓\r\n\e[10;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;14f\e[94m▓▓▓▓\r\n\e[10;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;15f\e[94m▓▓▓▓\r\n\e[10;14f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;16f\e[94m▓▓▓▓\r\n\e[10;15f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;17f\e[94m▓▓▓▓\r\n\e[10;16f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;18f\e[94m▓▓▓▓\r\n\e[10;17f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;19f\e[94m▓▓▓▓\r\n\e[10;18f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;20f\e[94m▓▓▓▓\r\n\e[10;19f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;21f\e[94m▓▓▓▓\r\n\e[10;20f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[94m▓▓▓▓\r\n\e[10;21f\e[0m \r\n\e[3J\e[H\e[2J\e[10;22f\e[0m     \e[11;22f\e[94m▓▓▓▓\r\n\e[12;22f\e[35m▓▓▓▓\r\n\e[13;22f\e[95m▓▓▓▓\r\n\e[14;22f\e[36m▓▓▓▓\r\n\e[15;22f\e[96m▓▓▓▓\r\n\e[16;22f\e[37m▓▓▓▓\r\n\e[17;22f\e[0m▓▓▓▓\r\n\e[18;21f\e[97m▓▓▓▓▓\r\n\e[19;21f\e[30m▓▓▓▓▓\r\n\e[20;21f\e[90m▓▓▓▓▓▓\r\n\e[21;21f\e[31m▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 36]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;46f\e[34m▓▓▓▓\r\n\e[10;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;45f\e[34m▓▓▓▓\r\n\e[10;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;44f\e[34m▓▓▓▓\r\n\e[10;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;43f\e[34m▓▓▓▓\r\n\e[10;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;42f\e[34m▓▓▓▓\r\n\e[10;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;41f\e[34m▓▓▓▓\r\n\e[10;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;40f\e[34m▓▓▓▓\r\n\e[10;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;39f\e[34m▓▓▓▓\r\n\e[10;44f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;38f\e[34m▓▓▓▓\r\n\e[10;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;37f\e[34m▓▓▓▓\r\n\e[10;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;36f\e[34m▓▓▓▓\r\n\e[10;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;35f\e[34m▓▓▓▓\r\n\e[10;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;34f\e[34m▓▓▓▓\r\n\e[10;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;33f\e[34m▓▓▓▓\r\n\e[10;38f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;32f\e[34m▓▓▓▓\r\n\e[10;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;31f\e[34m▓▓▓▓\r\n\e[10;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;30f\e[34m▓▓▓▓\r\n\e[10;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;29f\e[34m▓▓▓▓\r\n\e[10;34f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;28f\e[34m▓▓▓▓\r\n\e[10;33f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;27f\e[34m▓▓▓▓\r\n\e[10;32f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;26f\e[34m▓▓▓▓\r\n\e[10;31f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;25f\e[34m▓▓▓▓\r\n\e[10;30f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;24f\e[34m▓▓▓▓\r\n\e[10;29f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;23f\e[34m▓▓▓▓\r\n\e[10;28f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[34m▓▓▓▓\r\n\e[10;27f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;21f\e[34m▓▓▓▓\r\n\e[10;26f\e[0m \r\n\e[3J\e[H\e[2J\e[10;21f\e[0m     \e[11;22f\e[34m▓▓▓\r\n\e[12;22f\e[94m▓▓▓▓\r\n\e[13;22f\e[35m▓▓▓▓\r\n\e[14;22f\e[95m▓▓▓▓\r\n\e[15;22f\e[36m▓▓▓▓\r\n\e[16;22f\e[96m▓▓▓▓\r\n\e[17;22f\e[37m▓▓▓▓\r\n\e[18;22f\e[0m▓▓▓▓\r\n\e[19;21f\e[97m▓▓▓▓▓\r\n\e[20;21f\e[30m▓▓▓▓▓\r\n\e[21;21f\e[90m▓▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 37]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;0f\e[93m▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;1f\e[93m▓▓▓\r\n"
+  - delay: 40
+    content: "\e[10;2f\e[93m▓▓▓\r\n\e[10;1f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;3f\e[93m▓▓▓\r\n\e[10;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;4f\e[93m▓▓▓\r\n\e[10;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;5f\e[93m▓▓▓\r\n\e[10;4f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;6f\e[93m▓▓▓\r\n\e[10;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;7f\e[93m▓▓▓\r\n\e[10;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;8f\e[93m▓▓▓\r\n\e[10;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;9f\e[93m▓▓▓\r\n\e[10;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;10f\e[93m▓▓▓\r\n\e[10;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;11f\e[93m▓▓▓\r\n\e[10;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;12f\e[93m▓▓▓\r\n\e[10;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;13f\e[93m▓▓▓\r\n\e[10;12f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;14f\e[93m▓▓▓\r\n\e[10;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;15f\e[93m▓▓▓\r\n\e[10;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;16f\e[93m▓▓▓\r\n\e[10;15f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;17f\e[93m▓▓▓\r\n\e[10;16f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;18f\e[93m▓▓▓\r\n\e[10;17f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;19f\e[93m▓▓▓\r\n\e[10;18f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;20f\e[93m▓▓▓\r\n\e[10;19f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;21f\e[93m▓▓▓\r\n\e[10;20f\e[0m \r\n\e[3J\e[H\e[2J\e[10;21f\e[0m    \e[11;22f\e[93m▓▓\r\n\e[12;22f\e[34m▓▓▓\r\n\e[13;22f\e[94m▓▓▓▓\r\n\e[14;22f\e[35m▓▓▓▓\r\n\e[15;22f\e[95m▓▓▓▓\r\n\e[16;22f\e[36m▓▓▓▓\r\n\e[17;22f\e[96m▓▓▓▓\r\n\e[18;22f\e[37m▓▓▓▓\r\n\e[19;22f\e[0m▓▓▓▓\r\n\e[20;21f\e[97m▓▓▓▓▓\r\n\e[21;21f\e[30m▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 38]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;48f\e[33m▓▓\r\n\e[10;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;47f\e[33m▓▓\r\n\e[10;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;46f\e[33m▓▓\r\n\e[10;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;45f\e[33m▓▓\r\n\e[10;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;44f\e[33m▓▓\r\n\e[10;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;43f\e[33m▓▓\r\n\e[10;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;42f\e[33m▓▓\r\n\e[10;45f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;41f\e[33m▓▓\r\n\e[10;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;40f\e[33m▓▓\r\n\e[10;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;39f\e[33m▓▓\r\n\e[10;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;38f\e[33m▓▓\r\n\e[10;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;37f\e[33m▓▓\r\n\e[10;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;36f\e[33m▓▓\r\n\e[10;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;35f\e[33m▓▓\r\n\e[10;38f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;34f\e[33m▓▓\r\n\e[10;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;33f\e[33m▓▓\r\n\e[10;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;32f\e[33m▓▓\r\n\e[10;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;31f\e[33m▓▓\r\n\e[10;34f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;30f\e[33m▓▓\r\n\e[10;33f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;29f\e[33m▓▓\r\n\e[10;32f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;28f\e[33m▓▓\r\n\e[10;31f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;27f\e[33m▓▓\r\n\e[10;30f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;26f\e[33m▓▓\r\n\e[10;29f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;25f\e[33m▓▓\r\n\e[10;28f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;24f\e[33m▓▓\r\n\e[10;27f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;23f\e[33m▓▓\r\n\e[10;26f\e[0m \r\n\e[3J\e[H\e[2J\e[10;23f\e[0m   \e[11;23f\e[33m▓\r\n\e[12;22f\e[93m▓▓\r\n\e[13;22f\e[34m▓▓▓\r\n\e[14;22f\e[94m▓▓▓▓\r\n\e[15;22f\e[35m▓▓▓▓\r\n\e[16;22f\e[95m▓▓▓▓\r\n\e[17;22f\e[36m▓▓▓▓\r\n\e[18;22f\e[96m▓▓▓▓\r\n\e[19;22f\e[37m▓▓▓▓\r\n\e[20;22f\e[0m▓▓▓▓\r\n\e[21;21f\e[97m▓▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 39]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;0f\e[92m▓\r\n"
+  - delay: 40
+    content: "\e[10;1f\e[92m▓\r\n"
+  - delay: 40
+    content: "\e[10;2f\e[92m▓\r\n\e[10;1f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;3f\e[92m▓\r\n\e[10;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;4f\e[92m▓\r\n\e[10;3f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;5f\e[92m▓\r\n\e[10;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;6f\e[92m▓\r\n\e[10;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;7f\e[92m▓\r\n\e[10;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;8f\e[92m▓\r\n\e[10;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;9f\e[92m▓\r\n\e[10;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;10f\e[92m▓\r\n\e[10;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;11f\e[92m▓\r\n\e[10;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;12f\e[92m▓\r\n\e[10;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;13f\e[92m▓\r\n\e[10;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;14f\e[92m▓\r\n\e[10;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;15f\e[92m▓\r\n\e[10;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;16f\e[92m▓\r\n\e[10;15f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;17f\e[92m▓\r\n\e[10;16f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;18f\e[92m▓\r\n\e[10;17f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;19f\e[92m▓\r\n\e[10;18f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;20f\e[92m▓\r\n\e[10;19f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;21f\e[92m▓\r\n\e[10;20f\e[0m \r\n"
+  - delay: 39
+    content: "\e[10;22f\e[92m▓\r\n\e[10;21f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;23f\e[92m▓\r\n\e[10;22f\e[0m \r\n\e[3J\e[H\e[2J\e[10;23f\e[0m  \e[11;23f\e[92m▓\r\n\e[12;23f\e[33m▓\r\n\e[13;22f\e[93m▓▓\r\n\e[14;22f\e[34m▓▓▓\r\n\e[15;22f\e[94m▓▓▓▓\r\n\e[16;22f\e[35m▓▓▓▓\r\n\e[17;22f\e[95m▓▓▓▓\r\n\e[18;22f\e[36m▓▓▓▓\r\n\e[19;22f\e[96m▓▓▓▓\r\n\e[20;22f\e[37m▓▓▓▓\r\n\e[21;22f\e[0m▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 40]\r\n_________________________________________________\r\n"
+  - delay: 40
+    content: "\e[10;49f\e[32m▓\r\n\e[10;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;48f\e[32m▓\r\n\e[10;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;47f\e[32m▓\r\n\e[10;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;46f\e[32m▓\r\n\e[10;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;45f\e[32m▓\r\n\e[10;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;44f\e[32m▓\r\n\e[10;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;43f\e[32m▓\r\n\e[10;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;42f\e[32m▓\r\n\e[10;44f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;41f\e[32m▓\r\n\e[10;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;40f\e[32m▓\r\n\e[10;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;39f\e[32m▓\r\n\e[10;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;38f\e[32m▓\r\n\e[10;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;37f\e[32m▓\r\n\e[10;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;36f\e[32m▓\r\n\e[10;38f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;35f\e[32m▓\r\n\e[10;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;34f\e[32m▓\r\n\e[10;36f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;33f\e[32m▓\r\n\e[10;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;32f\e[32m▓\r\n\e[10;34f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;31f\e[32m▓\r\n\e[10;33f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;30f\e[32m▓\r\n\e[10;32f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;29f\e[32m▓\r\n\e[10;31f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;28f\e[32m▓\r\n\e[10;30f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;27f\e[32m▓\r\n\e[10;29f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;26f\e[32m▓\r\n\e[10;28f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;25f\e[32m▓\r\n\e[10;27f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;24f\e[32m▓\r\n\e[10;26f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;23f\e[32m▓\r\n\e[10;25f\e[0m \r\n\e[3J\e[H\e[2J\e[10;23f\e[0m  \e[11;23f\e[32m▓\r\n\e[12;23f\e[92m▓\r\n\e[13;23f\e[33m▓\r\n\e[14;22f\e[93m▓▓\r\n\e[15;22f\e[34m▓▓▓\r\n\e[16;22f\e[94m▓▓▓▓\r\n\e[17;22f\e[35m▓▓▓▓\r\n\e[18;22f\e[95m▓▓▓▓\r\n\e[19;22f\e[36m▓▓▓▓\r\n\e[20;22f\e[96m▓▓▓▓\r\n\e[21;22f\e[37m▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 41]\r\n_________________________________________________\r\n"
+  - delay: 41
+    content: "\e[10;0f\e[91m▓\r\n"
+  - delay: 40
+    content: "\e[10;1f\e[91m▓\r\n"
+  - delay: 40
+    content: "\e[10;2f\e[91m▓\r\n\e[10;1f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;3f\e[91m▓\r\n\e[10;2f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;4f\e[91m▓\r\n\e[10;3f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;5f\e[91m▓\r\n\e[10;4f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;6f\e[91m▓\r\n\e[10;5f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;7f\e[91m▓\r\n\e[10;6f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;8f\e[91m▓\r\n\e[10;7f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;9f\e[91m▓\r\n\e[10;8f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;10f\e[91m▓\r\n\e[10;9f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;11f\e[91m▓\r\n\e[10;10f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;12f\e[91m▓\r\n\e[10;11f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;13f\e[91m▓\r\n\e[10;12f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;14f\e[91m▓\r\n\e[10;13f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;15f\e[91m▓\r\n\e[10;14f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;16f\e[91m▓\r\n\e[10;15f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;17f\e[91m▓\r\n\e[10;16f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;18f\e[91m▓\r\n\e[10;17f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;19f\e[91m▓\r\n\e[10;18f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;20f\e[91m▓\r\n\e[10;19f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;21f\e[91m▓\r\n\e[10;20f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;22f\e[91m▓\r\n\e[10;21f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;23f\e[91m▓\r\n\e[10;22f\e[0m \r\n\e[3J\e[H\e[2J\e[10;23f\e[0m  \e[11;23f\e[91m▓\r\n\e[12;23f\e[32m▓\r\n\e[13;23f\e[92m▓\r\n\e[14;23f\e[33m▓\r\n\e[15;22f\e[93m▓▓\r\n\e[16;22f\e[34m▓▓▓\r\n\e[17;22f\e[94m▓▓▓▓\r\n\e[18;22f\e[35m▓▓▓▓\r\n\e[19;22f\e[95m▓▓▓▓\r\n\e[20;22f\e[36m▓▓▓▓\r\n\e[21;22f\e[96m▓▓▓▓\r\n\e[21;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 42]\r\n_________________________________________________\r\n"
+  - delay: 41
+    content: "\e[10;49f\e[31m▓\r\n\e[10;51f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;48f\e[31m▓\r\n\e[10;50f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;47f\e[31m▓\r\n\e[10;49f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;46f\e[31m▓\r\n\e[10;48f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;45f\e[31m▓\r\n\e[10;47f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;44f\e[31m▓\r\n\e[10;46f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;43f\e[31m▓\r\n\e[10;45f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;42f\e[31m▓\r\n\e[10;44f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;41f\e[31m▓\r\n\e[10;43f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;40f\e[31m▓\r\n\e[10;42f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;39f\e[31m▓\r\n\e[10;41f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;38f\e[31m▓\r\n\e[10;40f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;37f\e[31m▓\r\n\e[10;39f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;36f\e[31m▓\r\n\e[10;38f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;35f\e[31m▓\r\n\e[10;37f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;34f\e[31m▓\r\n\e[10;36f\e[0m \r\n"
+  - delay: 41
+    content: "\e[10;33f\e[31m▓\r\n\e[10;35f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;32f\e[31m▓\r\n\e[10;34f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;31f\e[31m▓\r\n\e[10;33f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;30f\e[31m▓\r\n\e[10;32f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;29f\e[31m▓\r\n\e[10;31f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;28f\e[31m▓\r\n\e[10;30f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;27f\e[31m▓\r\n\e[10;29f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;26f\e[31m▓\r\n\e[10;28f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;25f\e[31m▓\r\n\e[10;27f\e[0m \r\n"
+  - delay: 40
+    content: "\e[10;24f\e[31m▓\r\n\e[10;26f\e[0m \r\n\e[10;24f\e[0m  \e[10;24f\e[31m▓\r\n\e[3J\e[H\e[2J\e[12;23f\e[91m▓\r\n\e[13;23f\e[32m▓\r\n\e[14;23f\e[92m▓\r\n\e[15;23f\e[33m▓\r\n\e[16;22f\e[93m▓▓\r\n\e[17;22f\e[34m▓▓▓\r\n\e[18;22f\e[94m▓▓▓▓\r\n\e[19;22f\e[35m▓▓▓▓\r\n\e[20;22f\e[95m▓▓▓▓\r\n\e[21;22f\e[36m▓▓▓▓\r\n\e[22;22f\e[96m▓▓▓▓\r\n\e[23;22f\e[37m▓▓▓▓\r\n\e[24;22f\e[0m▓▓▓▓\r\n\e[25;21f\e[97m▓▓▓▓▓\r\n\e[26;21f\e[30m▓▓▓▓▓\r\n\e[27;21f\e[90m▓▓▓▓▓▓\r\n\e[28;21f\e[31m▓▓▓▓▓▓\r\n\e[29;21f\e[91m▓▓▓▓▓▓▓\r\n\e[30;21f\e[32m▓▓▓▓▓▓▓\r\n\e[31;21f\e[92m▓▓▓▓▓▓▓\r\n\e[32;20f\e[33m▓▓▓▓▓▓▓▓\r\n\e[33;20f\e[93m▓▓▓▓▓▓▓▓▓\r\n\e[34;20f\e[34m▓▓▓▓▓▓▓▓▓\r\n\e[35;20f\e[94m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[36;20f\e[35m▓▓▓▓▓▓▓▓▓▓▓\r\n\e[37;20f\e[95m▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[38;18f\e[36m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[39;18f\e[96m▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[40;17f\e[37m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[41;17f\e[0m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[42;17f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[43;17f\e[30m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[44;17f\e[90m████████████████\r\n\e[45;17f\e[31m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[46;17f\e[91m████████████████\r\n\e[47;17f\e[32m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[48;17f\e[92m████████████████\r\n\e[49;16f\e[33m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[50;16f\e[93m██████████████████\r\n\e[51;16f\e[34m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[52;16f\e[94m██████████████████\r\n\e[53;15f\e[35m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[54;15f\e[97m▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\r\n\e[54;21f\r\n\t\t[PRESS SPACE]\r\n\t\t[YOUR SCORE: 42]\r\n_________________________________________________\r\n"
+  - delay: 5808
+    content: "\e]0;loinp@loinp:~/Stack_game\a\e]7;file://loinp/home/loinp/Stack_game\a\e]0;loinp@loinp: ~/Stack_game\a\e[01;32mloinp@loinp\e[00m:\e[01;34m~/Stack_game\e[01;31m(master)\e[00m$ "
+  - delay: 2195
+    content: "logout\r\n"

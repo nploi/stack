@@ -1,7 +1,7 @@
 #include "game.h"
 
 void Game::runLR() {
-    int top = 20, topTemp = 19;
+    int top = 15, topTemp = 15;
     int size = SIZE;
     int indexColor = util::random(0, 16);
     Block blockTop = arrBlock[0];
@@ -23,10 +23,11 @@ void Game::runLR() {
             gameOver = insertBlock(block);
             if(gameOver) {
                 block.display();
+                printBlocks(topTemp);
                 return;
             }
 
-            if(top == 10) {
+            if(top == 7) {
                 topTemp--;
             } else {
                 top--;
@@ -64,9 +65,9 @@ void Game::getInput() {
 
 void Game::init() {
     Block defaultBlock(20, BLOCK2, colors[16]);
-    defaultBlock.move(15, 20);
+    defaultBlock.move(15, 15);
     insertBlock(defaultBlock);
-    printBlocks(20);
+    printBlocks(15);
     stop = false;
     speed = 40000;
     gameOver = false;
@@ -77,11 +78,14 @@ void Game::printBlocks(int top) {
     for (int i = arrBlock.size() - 1; i >= 0; --i) {
         arrBlock[i].move(arrBlock[i].getX(), ++top);
         arrBlock[i].display();
+        if(!gameOver && top > 15) {
+            break;
+        }
     }
-    util::gotoxy(21, top);
+    util::gotoxy(15, top);
     cout << endl << "\t\t[PRESS SPACE]";
-    cout << endl << "\t\t[YOUR SCORE: " << arrBlock.size() - 1 << "]\n";
-    cout << "_________________________________________________";
+    cout << endl << "\t\t[YOUR SCORE: " << arrBlock.size() - 1 << "]" << endl;
+    cout << "_________________________________________________\n";
 }
 
 void Game::start() {
