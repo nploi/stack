@@ -160,7 +160,7 @@ void Game::goLeft(Block &block, int top) {
 
         block.move(i, top);
         block.display();
-        space.move(i + block.getSize() + 1, top);
+        space.move(i + block.getSize(), top);
         space.display();
     }
 }
