@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++11 -pthread -g   CMakeFiles/Stack.dir/block.cpp.o CMakeFiles/Stack.dir/game.cpp.o CMakeFiles/Stack.dir/main.cpp.o CMakeFiles/Stack.dir/util.cpp.o  -o Stack 
