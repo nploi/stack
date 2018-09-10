@@ -8,7 +8,6 @@
 #include <limits>
 #include <chrono>
 
-#define SIZE_OF_TABLE 30
 #define BLOCK1 "█"
 #define BLOCK2 "▓"
 

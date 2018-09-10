@@ -1,41 +1,21 @@
 #include "game.h"
 
-void Game::menu() {
-//    do {7
-//        cout << ""
-//    } while (true);
-}
 void Game::runLR() {
-    int top = 19, topTemp = 19;
+    int top = 20, topTemp = 19;
+    int size = SIZE;
     int indexColor = util::random(0, 16);
-    int size = 20;
-    Block space(1, " ", Color::Code::RESET);
     Block blockTop = arrBlock[0];
-
     while (true) {
         bool odd = top % 2 == 0;
         Block block(size, (odd ? BLOCK1 : BLOCK2), colors[indexColor]);
 
-        // Move block to right
-        for (int i = 0; i <= SIZE_OF_TABLE && !stop; ++i) {
-            usleep(speed);
-
-            block.move(i, top);
-            block.display();
-            if(i > 0) {
-                space.move(i - 1, top);
-                space.display();
-            }
+        while (!stop && odd) {
+            goRight(block, top);
+            goLeft(block, top);
         }
-
-        // Move block to left
-        for (int i = SIZE_OF_TABLE; i >= 0 && !stop; --i) {
-            usleep(speed);
-
-            block.move(i, top);
-            block.display();
-            space.move(i + block.getSize() + 1, top);
-            space.display();
+        while (!stop && !odd) {
+            goLeft(block, top);
+            goRight(block, top);
         }
 
         if(stop) {
@@ -43,7 +23,6 @@ void Game::runLR() {
             gameOver = insertBlock(block);
             if(gameOver) {
                 block.display();
-                cout << "GAME OVER!!";
                 return;
             }
 
@@ -68,7 +47,6 @@ void Game::runLR() {
 void Game::getInput() {
 
     do {
-        util::gotoxy(30, 30);
         char c;
         util::getchar(c);
         if(gameOver) {
@@ -78,8 +56,8 @@ void Game::getInput() {
             case ' ':
                 stop = true;
                 break;
-            case 'e':
-                return;
+//            case 'e':
+//                return;
         }
     } while (true);
 }
@@ -87,11 +65,10 @@ void Game::getInput() {
 void Game::init() {
     Block defaultBlock(20, BLOCK2, colors[16]);
     defaultBlock.move(15, 20);
-    defaultBlock.display();
     insertBlock(defaultBlock);
+    printBlocks(20);
     stop = false;
-    pauseTemp = false;
-    speed = 35000;
+    speed = 40000;
     gameOver = false;
 }
 
@@ -101,6 +78,10 @@ void Game::printBlocks(int top) {
         arrBlock[i].move(arrBlock[i].getX(), ++top);
         arrBlock[i].display();
     }
+    util::gotoxy(21, top);
+    cout << endl << "\t\t[PRESS SPACE]";
+    cout << endl << "\t\t[YOUR SCORE: " << arrBlock.size() - 1 << "]\n";
+    cout << "_________________________________________________";
 }
 
 void Game::start() {
@@ -110,7 +91,6 @@ void Game::start() {
     thread1.join();
     thread2.join();
 }
-
 
 bool Game::removeExcess(Block &block) {
     int size = arrBlock.size();
@@ -150,4 +130,33 @@ bool Game::insertBlock(Block &block) {
         arrBlock.push_back(block);
     }
     return result;
+}
+
+void Game::goRight(Block &block, int top) {
+    Block space(1, " ", Color::Code::RESET);
+
+    // Move block to right
+    for (int i = 0; i + block.getSize() <= SIZE_OF_TABLE && !stop; ++i) {
+        usleep(speed);
+
+        block.move(i, top);
+        block.display();
+        if(i > 1) {
+            space.move(i - 1, top);
+            space.display();
+        }
+    }
+}
+
+void Game::goLeft(Block &block, int top) {
+    Block space(1, " ", Color::Code::RESET);
+    // Move block to left
+    for (int i = SIZE_OF_TABLE - block.getSize(); i >= 0 && !stop; --i) {
+        usleep(speed);
+
+        block.move(i, top);
+        block.display();
+        space.move(i + block.getSize() + 1, top);
+        space.display();
+    }
 }
