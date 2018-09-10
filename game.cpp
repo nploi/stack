@@ -94,7 +94,7 @@ void Game::printBlocks(int top) {
     cout << "╚══════════════════╝\n";
     util::gotoxy(70, 12);
     cout << Color::color(Color::Code::FG_WHITE);
-    cout << arrBlock.size() - 1;
+    cout << arrBlock.size() - 1 << endl;
 }
 
 void Game::start() {
