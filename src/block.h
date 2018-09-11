@@ -8,14 +8,18 @@
 #include <limits>
 #include <chrono>
 
-#define BLOCK1 "█"
-#define BLOCK2 "▓"
+#ifdef _WIN32
+#define BLOCK char(219)
+#else
+#define BLOCK "█"
+#endif // _WIN32
+
 
 using namespace std;
 
 class Block {
 public:
-    Block(int size, string block, int color);
+    Block(int size, int color);
     Block(const Block &block);
     ~Block() {}
     void removeLeft(int num);

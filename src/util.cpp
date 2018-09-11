@@ -4,7 +4,7 @@
     void util::gotoxy(int x, int y) {
         static HANDLE handle = NULL;
         if(!handle) {
-            h = GetStdHandle(STD_OUTPUT_HANDLE);
+            handle = GetStdHandle(STD_OUTPUT_HANDLE);
         }
         COORD coord = { x, y };
         SetConsoleCursorPosition(handle, coord);
@@ -37,7 +37,7 @@ char getch() {
 
 void util::getchar(char &c) {
 #ifdef _WIN32
-    std::cin >> c;
+	c = _getch();
 #else
     c = getch();
 #endif
@@ -48,5 +48,30 @@ int util::random(int a, int b) {
     srand (time(NULL));
     /* generate secret number between 1 and 10: */
     return (rand() % b + a);
+}
+
+void util::sleep(int miliseconds)
+{
+#ifdef _WIN32
+	Sleep(miliseconds);
+#else
+	usleep(miliseconds * 1000);
+#endif // 
+
+}
+
+void util::clear()
+{
+#ifdef _WIN32
+	system("cls");
+#else
+	system("clear");
+#endif // _WIN32
+}
+
+void util::remove(int x, int y)
+{
+	gotoxy(x, y);
+	std::cout << " ";
 }
 

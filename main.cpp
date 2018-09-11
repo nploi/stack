@@ -1,10 +1,14 @@
 
 #include <iostream>
 #include "src/game.h"
+#include <clocale>
 
 int main() {
-    system("clear");
-    Game game;
-    game.start();
+	util::clear();
+	Game::start();
+
+#ifdef _WIN32
+	system("pause");
+#endif // _WIN32
     return 0;
 }

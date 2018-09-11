@@ -3,15 +3,17 @@
 void Game::runLR() {
     int top = 15, topTemp = 15;
     int size = SIZE;
-    int indexColor = util::random(0, 16);
+    int indexColor = util::random(0, 14);
     while (true) {
         bool odd = arrBlock.size() % 2 == 0;
-        Block block(size, (odd ? BLOCK2 : BLOCK1), colors[indexColor]);
+        Block block(size, colors[indexColor]);
+		util::sleep(speed);
 
         while (!stop && odd) {
             goRight(block, top);
             goLeft(block, top);
         }
+		util::sleep(speed);
         while (!stop && !odd) {
             goLeft(block, top);
             goRight(block, top);
@@ -32,7 +34,7 @@ void Game::runLR() {
                 top--;
                 topTemp = top;
             }
-            printBlocks(topTemp++);
+           printBlocks(topTemp++);
             indexColor--;
             if(indexColor < 0) {
                 indexColor = 16;
@@ -53,28 +55,31 @@ void Game::getInput() {
             return;
         }
         switch (c) {
-            case ' ':
+            case 32:
                 stop = true;
                 break;
 //            case 'e':
 //                return;
         }
+		//cin.ignore();
+		util::sleep(10);
+
     } while (true);
 }
 
 void Game::init() {
-    Block defaultBlock(SIZE, BLOCK2, colors[16]);
+    Block defaultBlock(SIZE, colors[16]);
     defaultBlock.move(15, 15);
     insertBlock(defaultBlock);
     printBlocks(15);
     stop = false;
-    speed = 40000;
+    speed = 35;
     gameOver = false;
 }
 
 void Game::printBlocks(int top) {
-    system("clear");
-    for (int i = arrBlock.size() - 1; i >= 0; --i) {
+	util::clear();
+	for (int i = arrBlock.size() - 1; i >= 0; --i) {
         arrBlock[i].move(arrBlock[i].getX(), ++top);
         arrBlock[i].display();
         if(!gameOver && top > 15) {
@@ -83,15 +88,27 @@ void Game::printBlocks(int top) {
     }
 
     util::gotoxy(0, top + 1);
-    cout << "██████████████████████████████████████████████████\n";
+	for (int i = 0; i < SIZE_OF_TABLE; i++) {
+		cout << BLOCK;
+	}
     util::gotoxy(59, 7);
     cout << "[PRESS SPACE]\n";
-    util::gotoxy(55, 8);
-    cout << "╔══════════════════╗\n";
-    util::gotoxy(55, 9);
-    cout << "║YOUR SCORE:       ║\n";
-    util::gotoxy(55, 10);
-    cout << "╚══════════════════╝\n";
+
+#ifdef _WIN32
+	util::gotoxy(55, 8);
+	cout << "|==================|\n";
+	util::gotoxy(55, 9);
+	cout << "|YOUR SCORE:       |\n";
+	util::gotoxy(55, 10);
+	cout << "|==================|\n";
+#else
+	util::gotoxy(55, 8);
+	cout << "╔══════════════════╗\n";
+	util::gotoxy(55, 9);
+	cout << "║YOUR SCORE:       ║\n";
+	util::gotoxy(55, 10);
+	cout << "╚══════════════════╝\n";
+#endif // _WIN32
 
     util::gotoxy(70, 9);
     cout << Color::color(Color::Code::FG_WHITE);
@@ -151,30 +168,24 @@ bool Game::insertBlock(Block &block) {
 }
 
 void Game::goRight(Block &block, int top) {
-    Block space(1, " ", Color::Code::RESET);
-
     // Move block to right
     for (int i = 0; i + block.getSize() <= SIZE_OF_TABLE && !stop; ++i) {
-        usleep(speed);
-
+		util::sleep(50);
+		//block.destroy();
         block.move(i, top);
         block.display();
-        if(i > 1) {
-            space.move(i - 1, top);
-            space.display();
-        }
+        if(i >= 1) {
+			util::remove(i - 1, top);
+		}
     }
 }
 
 void Game::goLeft(Block &block, int top) {
-    Block space(1, " ", Color::Code::RESET);
     // Move block to left
     for (int i = SIZE_OF_TABLE - block.getSize(); i >= 0 && !stop; --i) {
-        usleep(speed);
-
+        util::sleep(50);
         block.move(i, top);
         block.display();
-        space.move(i + block.getSize(), top);
-        space.display();
+		util::remove(i + block.getSize(), top);
     }
 }

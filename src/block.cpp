@@ -1,7 +1,6 @@
 #include "block.h"
 
-Block::Block(int size, string block, int color) {
-    this->block = block;
+Block::Block(int size, int color) {
     this->size = size;
     this->color = color;
 }
@@ -36,13 +35,12 @@ void Block::display() {
     util::gotoxy(x, y);
     cout << Color::color(this->color);
     for (int i = 0; i < this->size; ++i) {
-        cout << block;
+        cout << BLOCK;
     }
     cout << endl;
 }
 
 Block::Block(const Block &block) {
-    this->block = block.block;
     this->x = block.x;
     this->y = block.y;
     this->color = block.color;
