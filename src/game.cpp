@@ -183,10 +183,6 @@ void Game::goLeft(Block &block, int top) {
         util::sleep(50);
         block.move(i, top);
         block.display();
-#ifdef _WIN32
-        util::remove(i + block.getSize(), top);
-#else
         util::remove(i + block.getSize() - 1, top);
-#endif
     }
 }
