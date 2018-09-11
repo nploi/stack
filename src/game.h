@@ -17,6 +17,7 @@ static int speed;
 static bool stop;
 static vector<Block> arrBlock;
 static bool gameOver;
+static int indexColor;
 
 class Game {
 public:

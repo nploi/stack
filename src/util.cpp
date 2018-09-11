@@ -69,8 +69,7 @@ void util::clear()
 #endif // _WIN32
 }
 
-void util::remove(int x, int y)
-{
+void util::remove(int x, int y) {
 	gotoxy(x, y);
 	std::cout << " ";
 }

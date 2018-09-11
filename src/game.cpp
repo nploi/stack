@@ -3,17 +3,16 @@
 void Game::runLR() {
     int top = 15, topTemp = 15;
     int size = SIZE;
-    int indexColor = util::random(0, 14);
+    int color = indexColor;
+    color++;
     while (true) {
         bool odd = arrBlock.size() % 2 == 0;
-        Block block(size, colors[indexColor]);
-		util::sleep(speed);
+        Block block(size, colors[color]);
 
         while (!stop && odd) {
             goRight(block, top);
             goLeft(block, top);
         }
-		util::sleep(speed);
         while (!stop && !odd) {
             goLeft(block, top);
             goRight(block, top);
@@ -35,9 +34,9 @@ void Game::runLR() {
                 topTemp = top;
             }
            printBlocks(topTemp++);
-            indexColor--;
-            if(indexColor < 0) {
-                indexColor = 16;
+            color--;
+            if(color < 0) {
+                color = 14;
             }
 
             stop = false;
@@ -61,14 +60,14 @@ void Game::getInput() {
 //            case 'e':
 //                return;
         }
-		//cin.ignore();
 		util::sleep(10);
 
     } while (true);
 }
 
 void Game::init() {
-    Block defaultBlock(SIZE, colors[16]);
+    indexColor = util::random(0, 12);
+    Block defaultBlock(SIZE, colors[indexColor]);
     defaultBlock.move(15, 15);
     insertBlock(defaultBlock);
     printBlocks(15);
@@ -88,7 +87,8 @@ void Game::printBlocks(int top) {
     }
 
     util::gotoxy(0, top + 1);
-	for (int i = 0; i < SIZE_OF_TABLE; i++) {
+    //cout << Color::color(colors[indexColor]) ;
+    for (int i = 0; i < SIZE_OF_TABLE; i++) {
 		cout << BLOCK;
 	}
     util::gotoxy(59, 7);
@@ -171,12 +171,9 @@ void Game::goRight(Block &block, int top) {
     // Move block to right
     for (int i = 0; i + block.getSize() <= SIZE_OF_TABLE && !stop; ++i) {
 		util::sleep(50);
-		//block.destroy();
         block.move(i, top);
         block.display();
-        if(i >= 1) {
-			util::remove(i - 1, top);
-		}
+        util::remove(i, top);
     }
 }
 
@@ -186,6 +183,6 @@ void Game::goLeft(Block &block, int top) {
         util::sleep(50);
         block.move(i, top);
         block.display();
-		util::remove(i + block.getSize(), top);
+		util::remove(i + block.getSize() - 1, top);
     }
 }
