@@ -8,7 +8,10 @@ Terminal version of the game "Stack" written in C++ 11.
 ![Demo of usage](image/demoWin.gif)
 
 
-## Play game
+## Play on Linux
 ````bash
 sh run.sh
 ````
+
+## Play on Windows
+* You need build on visual studio and run
