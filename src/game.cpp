@@ -7,7 +7,7 @@ void Game::runLR() {
     Block blockTop = arrBlock[0];
     while (true) {
         bool odd = arrBlock.size() % 2 == 0;
-        Block block(size, (topTemp % 2 == 0 ? BLOCK1 : BLOCK2), colors[indexColor]);
+        Block block(size, (odd ? BLOCK2 : BLOCK1), colors[indexColor]);
 
         while (!stop && odd) {
             goRight(block, top);
