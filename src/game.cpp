@@ -4,7 +4,6 @@ void Game::runLR() {
     int top = 15, topTemp = 15;
     int size = SIZE;
     int indexColor = util::random(0, 16);
-    Block blockTop = arrBlock[0];
     while (true) {
         bool odd = arrBlock.size() % 2 == 0;
         Block block(size, (odd ? BLOCK2 : BLOCK1), colors[indexColor]);
@@ -64,7 +63,7 @@ void Game::getInput() {
 }
 
 void Game::init() {
-    Block defaultBlock(20, BLOCK2, colors[16]);
+    Block defaultBlock(SIZE, BLOCK2, colors[16]);
     defaultBlock.move(15, 15);
     insertBlock(defaultBlock);
     printBlocks(15);
