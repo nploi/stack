@@ -72,7 +72,7 @@ void Game::init() {
     insertBlock(defaultBlock);
     printBlocks(15);
     stop = false;
-    speed = 35;
+    speed = 40;
     gameOver = false;
 }
 
@@ -170,7 +170,7 @@ bool Game::insertBlock(Block &block) {
 void Game::goRight(Block &block, int top) {
     // Move block to right
     for (int i = 0; i + block.getSize() <= SIZE_OF_TABLE && !stop; ++i) {
-		util::sleep(50);
+		util::sleep(speed);
         block.move(i, top);
         block.display();
 #ifdef _WIN32
@@ -185,9 +185,13 @@ void Game::goRight(Block &block, int top) {
 void Game::goLeft(Block &block, int top) {
     // Move block to left
     for (int i = SIZE_OF_TABLE - block.getSize(); i >= 0 && !stop; --i) {
-        util::sleep(50);
+        util::sleep(speed);
         block.move(i, top);
         block.display();
+#ifdef _WIN32
         util::remove(i + block.getSize(), top);
+#else
+        util::remove(i + block.getSize() - 1, top);
+#endif // _WIN32
     }
 }
