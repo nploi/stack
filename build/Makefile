@@ -27,7 +27,7 @@ game.o: ../src/game.cpp
 	$(CXX) -c $^ $(CXXFLAGS) -o $@  
 
 test:
-	echo "3" | ./$(EXE)
+	echo "2" | ./$(EXE)
 
 clean:
 	$(RM) *.o $(EXE)
