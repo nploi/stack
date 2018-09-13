@@ -18,6 +18,5 @@ install:
 - make
 
 test_script:
-- cd build
 - make test
 
