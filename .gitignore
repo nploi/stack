@@ -4,10 +4,10 @@ cmake-build-debug
 CMakeCache.txt
 cmake_install.cmake
 CMakeFiles
-Makefile
 Stack
 demo.yml
 Win/Win.VC
 Win/Debug
 Win/Win/Debug
 Stack.cbp
+build/*.
