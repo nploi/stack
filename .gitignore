@@ -10,4 +10,5 @@ Win/Win.VC
 Win/Debug
 Win/Win/Debug
 Stack.cbp
-build/*.
+build/Makefile
+build/*.o
