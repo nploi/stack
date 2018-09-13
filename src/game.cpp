@@ -21,7 +21,10 @@ void Game::menu() {
       case '2':
         util::gotoxy(10, 2);
         cout << Color::color(Color::Code::FG_LIGHT_MAGENTA);
-        cout << "[Best score: " << bestScore << "]";
+        cout << "[Best score: " << getBestScore() << "]";
+		util::gotoxy(10, 3);
+		cout << "Any key return menu";
+		getch();
         Game::menu();
         break;
       case '3':
@@ -34,7 +37,7 @@ void Game::menu() {
 
 void Game::save() {
     std::ofstream outputFile;
-    outputFile.open(".score.txt", ios::out);
+    outputFile.open(FILE_NAME, ios::out);
     if(outputFile.fail()) {
         cout << "Open file faild.";
         exit(1);
@@ -43,19 +46,25 @@ void Game::save() {
     outputFile.close();
 }
 
-void Game::init() {
-    std::ifstream inputfile;
-    inputfile.open(".score.txt", ios::in);
-    if(inputfile.fail()) {
-        std::ofstream create(".score.txt");
-        cout << "Create file '.score.txt'.";
-        bestScore = 0;
-        create.close();
-    } else {
-        inputfile >> bestScore;
-    }
-    inputfile.close();
+int Game::getBestScore() {
+	int score;
+	std::ifstream inputfile;
+	inputfile.open(FILE_NAME, ios::in);
+	if (inputfile.fail()) {
+		std::ofstream create(FILE_NAME);
+		cout << "Create file " << FILE_NAME;
+		score = 0;
+		create.close();
+	}
+	else {
+		inputfile >> score;
+	}
+	inputfile.close();
+	return score;
+}
 
+void Game::init() {
+	bestScore = getBestScore();
     score = 0;
     indexColor = util::random(0, 12);
     Block defaultBlock(SIZE, colors[indexColor]);
@@ -117,10 +126,8 @@ void Game::printBlocks(int top) {
     cout << bestScore << endl;
     if(gameOver) {
         util::gotoxy(55, 12);
-        cout << "Any key to return menu." << endl;
-#ifdef _WIN32
-        getchar();
-#endif
+        cout << "Any key return menu." << endl;
+        getch();
     }
 }
 
@@ -202,7 +209,7 @@ void Game::logic() {
 }
 
 void Game::start() {
-    init();
+	Game::init();
     thread thread1(&logic);
     thread thread2(&getInput);
     thread1.join();

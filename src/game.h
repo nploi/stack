@@ -9,6 +9,7 @@ using namespace std;
 
 #define SIZE_OF_TABLE 50
 #define SIZE 20
+#define FILE_NAME ".score.txt"
 
 static int speed;
 static bool stop;
@@ -24,6 +25,7 @@ class Game {
 public:
     static void menu();
     static void save();
+	static int getBestScore();
     static void getInput();
     static void init();
     static void printBlocks(int top);
