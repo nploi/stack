@@ -2,32 +2,23 @@
 
 void Game::menu() {
     util::clear();
-    cout << Color::color(Color::Code::FG_GREEN);
-    util::gotoxy(10, 5);
+    printBlocks(15);
+    cout << Color::color(Color::Code::FG_LIGHT_YELLOW);
+    util::gotoxy(55, 11);
     cout << "1. Play new game";
-    util::gotoxy(10, 6);
-    cout << "2. Best score";
-    util::gotoxy(10, 7);
-    cout << "3. Exit";  
-    util::gotoxy(10, 8);
+    util::gotoxy(55, 12);
+    cout << "2. Exit";  
+    util::gotoxy(55, 13);
     cout << "=> ";
 
     char select;
-    select = getchar();
+    cin >> select;
     switch (select) {
       case '1':
+        Game::init();
         Game::start();
         break;
       case '2':
-        util::gotoxy(10, 2);
-        cout << Color::color(Color::Code::FG_LIGHT_MAGENTA);
-        cout << "[Best score: " << getBestScore() << "]";
-		util::gotoxy(10, 3);
-		cout << "Any key return menu";
-		getchar();
-        Game::menu();
-        break;
-      case '3':
         Game::save();
         break;
       default:
@@ -73,7 +64,7 @@ void Game::init() {
     insertBlock(defaultBlock);
     printBlocks(15);
     stop = false;
-    speed = 40;
+    speed = 30;
     gameOver = false;
     exitAndSave = false;
 }
@@ -93,42 +84,37 @@ void Game::printBlocks(int top) {
 		cout << BLOCK;
 	}
 
-    util::gotoxy(55, 6);
+    util::gotoxy(55, 5);
     cout << "* SPACE:\tstop block\n";
-    util::gotoxy(55, 7);
+    util::gotoxy(55, 6);
     cout << "* ESC:\texit\n";
 
 #ifdef _WIN32
-	util::gotoxy(55, 8);
+	util::gotoxy(55, 7);
 	cout << "|==================|\n";
-	util::gotoxy(55, 9);
+	util::gotoxy(55, 8);
 	cout << "|YOUR SCORE:       |\n";
-	util::gotoxy(55, 10);
+	util::gotoxy(55, 9);
     cout << "|BEST SCORE:       |\n";
-	util::gotoxy(55, 11);
+	util::gotoxy(55, 10);
 	cout << "|==================|\n";
 #else
-	util::gotoxy(55, 8);
+	util::gotoxy(55, 7);
 	cout << "╔══════════════════╗\n";
-	util::gotoxy(55, 9);
+	util::gotoxy(55, 8);
 	cout << "║YOUR SCORE:       ║\n";
-    util::gotoxy(55, 10);
+    util::gotoxy(55, 9);
 	cout << "║BEST SCORE:       ║\n";
-	util::gotoxy(55, 11);
+	util::gotoxy(55, 10);
 	cout << "╚══════════════════╝\n";
 #endif // _WIN32
 
-    util::gotoxy(70, 9);
+    util::gotoxy(70, 8);
     cout << Color::color(Color::Code::FG_WHITE);
     cout << score << endl;
-    util::gotoxy(70, 10);
+    util::gotoxy(70, 9);
     cout << Color::color(Color::Code::FG_WHITE);
     cout << bestScore << endl;
-    if(gameOver) {
-        util::gotoxy(55, 12);
-        cout << "Any key return menu." << endl;
-		getchar();
-    }
 }
 
 void Game::getInput() {
@@ -136,20 +122,15 @@ void Game::getInput() {
     do {
         char c;
         util::getchar(c);
-        if(gameOver) {
-            return;
-        }
         switch (c) {
             case 32:
                 stop = true;
                 break;
             case 27:
-                exitAndSave = true;
+               exitAndSave = true;
                return;
         }
-		util::sleep(10);
-
-    } while (true);
+    } while (!gameOver);
 }
 
 void Game::logic() {
@@ -180,7 +161,6 @@ void Game::logic() {
             gameOver = insertBlock(block);
             if(gameOver) {
                 arrBlock.push_back(block);
-                printBlocks(topTemp);
                 save();
                 menu();
                 return;
