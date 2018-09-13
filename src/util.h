@@ -4,6 +4,13 @@
 #include <iostream>
 #include <time.h>       /* time */
 #include <stdlib.h>     /* srand, rand */
+#include <string>
+#include <iomanip>
+#include <limits>
+#include <chrono>
+#include <vector>
+#include <thread>
+#include <fstream>
 
 #ifdef _WIN32
     #include <windows.h>

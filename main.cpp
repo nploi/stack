@@ -5,10 +5,6 @@
 
 int main() {
 	util::clear();
-	Game::start();
-
-#ifdef _WIN32
-	system("pause");
-#endif // _WIN32
+	Game::menu();
     return 0;
 }

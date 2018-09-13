@@ -14,7 +14,9 @@ compiler:
   - gcc
 
 install:
+  - cd build
   - make
 
 script:
+  - cd build
   - make test

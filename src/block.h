@@ -3,10 +3,6 @@
 
 #include "util.h"
 #include "color.h"
-#include <string>
-#include <iomanip>
-#include <limits>
-#include <chrono>
 
 #ifdef _WIN32
 #define BLOCK char(219)

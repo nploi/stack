@@ -1,47 +1,126 @@
 #include "game.h"
 
-void Game::runLR() {
-    int top = 15, topTemp = 15;
-    int size = SIZE;
-    int color = indexColor;
-    color++;
-    while (true) {
-        bool odd = arrBlock.size() % 2 == 0;
-        Block block(size, colors[color]);
+void Game::menu() {
+    util::clear();
+    cout << Color::color(Color::Code::FG_GREEN);
+    util::gotoxy(10, 5);
+    cout << "1. Play new game";
+    util::gotoxy(10, 6);
+    cout << "2. Best score";
+    util::gotoxy(10, 7);
+    cout << "3. Exit";  
+    util::gotoxy(10, 8);
+    cout << "=> ";
 
-        while (!stop && odd) {
-            goRight(block, top);
-            goLeft(block, top);
+    char select;
+    select = getchar();
+    switch (select) {
+      case '1':
+        Game::start();
+        break;
+      case '2':
+        util::gotoxy(10, 2);
+        cout << Color::color(Color::Code::FG_LIGHT_MAGENTA);
+        cout << "[Best score: " << bestScore << "]";
+        Game::menu();
+        break;
+      case '3':
+        Game::save();
+        break;
+      default:
+        Game::menu();
+    }
+}
+
+void Game::save() {
+    std::ofstream outputFile;
+    outputFile.open(".score.txt", ios::out);
+    if(outputFile.fail()) {
+        cout << "Open file faild.";
+        exit(1);
+    }
+    outputFile << bestScore;
+    outputFile.close();
+}
+
+void Game::init() {
+    std::ifstream inputfile;
+    inputfile.open(".score.txt", ios::in);
+    if(inputfile.fail()) {
+        std::ofstream create(".score.txt");
+        cout << "Create file '.score.txt'.";
+        bestScore = 0;
+        create.close();
+    } else {
+        inputfile >> bestScore;
+    }
+    inputfile.close();
+
+    score = 0;
+    indexColor = util::random(0, 12);
+    Block defaultBlock(SIZE, colors[indexColor]);
+    defaultBlock.move(15, 15);
+    arrBlock.clear();
+    insertBlock(defaultBlock);
+    printBlocks(15);
+    stop = false;
+    speed = 40;
+    gameOver = false;
+    exitAndSave = false;
+}
+
+void Game::printBlocks(int top) {
+	util::clear();
+	for (int i = arrBlock.size() - 1; i >= 0; --i) {
+        arrBlock[i].move(arrBlock[i].getX(), ++top);
+        arrBlock[i].display();
+        if(!gameOver && top > 15) {
+            break;
         }
-        while (!stop && !odd) {
-            goLeft(block, top);
-            goRight(block, top);
-        }
+    }
 
-        if(stop) {
-            block.destroy();
-            gameOver = insertBlock(block);
-            if(gameOver) {
-                arrBlock.push_back(block);
-                printBlocks(topTemp);
-                return;
-            }
+    util::gotoxy(0, top + 1);
+    for (int i = 0; i < SIZE_OF_TABLE; i++) {
+		cout << BLOCK;
+	}
 
-            if(top == 7) {
-                topTemp--;
-            } else {
-                top--;
-                topTemp = top;
-            }
-           printBlocks(topTemp++);
-            color--;
-            if(color < 0) {
-                color = 14;
-            }
+    util::gotoxy(55, 6);
+    cout << "* SPACE:\tstop block\n";
+    util::gotoxy(55, 7);
+    cout << "* ESC:\texit\n";
 
-            stop = false;
-            size = arrBlock[arrBlock.size() - 1].getSize();
-        }
+#ifdef _WIN32
+	util::gotoxy(55, 8);
+	cout << "|==================|\n";
+	util::gotoxy(55, 9);
+	cout << "|YOUR SCORE:       |\n";
+	util::gotoxy(55, 10);
+    cout << "|BEST SCORE:       |\n";
+	util::gotoxy(55, 11);
+	cout << "|==================|\n";
+#else
+	util::gotoxy(55, 8);
+	cout << "╔══════════════════╗\n";
+	util::gotoxy(55, 9);
+	cout << "║YOUR SCORE:       ║\n";
+    util::gotoxy(55, 10);
+	cout << "║BEST SCORE:       ║\n";
+	util::gotoxy(55, 11);
+	cout << "╚══════════════════╝\n";
+#endif // _WIN32
+
+    util::gotoxy(70, 9);
+    cout << Color::color(Color::Code::FG_WHITE);
+    cout << score << endl;
+    util::gotoxy(70, 10);
+    cout << Color::color(Color::Code::FG_WHITE);
+    cout << bestScore << endl;
+    if(gameOver) {
+        util::gotoxy(55, 12);
+        cout << "Any key to return menu." << endl;
+#ifdef _WIN32
+        getchar();
+#endif
     }
 }
 
@@ -57,71 +136,74 @@ void Game::getInput() {
             case 32:
                 stop = true;
                 break;
-//            case 'e':
-//                return;
+            case 27:
+                exitAndSave = true;
+               return;
         }
 		util::sleep(10);
 
     } while (true);
 }
 
-void Game::init() {
-    indexColor = util::random(0, 12);
-    Block defaultBlock(SIZE, colors[indexColor]);
-    defaultBlock.move(15, 15);
-    insertBlock(defaultBlock);
-    printBlocks(15);
-    stop = false;
-    speed = 40;
-    gameOver = false;
-}
+void Game::logic() {
+    int top = 15, topTemp = 15;
+    int size = SIZE;
+    int color = indexColor;
+    color++;
+    while (true) {
+        bool odd = arrBlock.size() % 2 == 0;
+        Block block(size, colors[color]);
 
-void Game::printBlocks(int top) {
-	util::clear();
-	for (int i = arrBlock.size() - 1; i >= 0; --i) {
-        arrBlock[i].move(arrBlock[i].getX(), ++top);
-        arrBlock[i].display();
-        if(!gameOver && top > 15) {
-            break;
+        while (!stop && odd && !exitAndSave) {
+            goRight(block, top);
+            goLeft(block, top);
         }
-    }
+        while (!stop && !odd && !exitAndSave) {
+            goLeft(block, top);
+            goRight(block, top);
+        }
 
-    util::gotoxy(0, top + 1);
-    //cout << Color::color(colors[indexColor]) ;
-    for (int i = 0; i < SIZE_OF_TABLE; i++) {
-		cout << BLOCK;
-	}
-    util::gotoxy(59, 7);
-    cout << "[PRESS SPACE]\n";
+        if(exitAndSave) {
+            save();
+            return;
+        }
 
-#ifdef _WIN32
-	util::gotoxy(55, 8);
-	cout << "|==================|\n";
-	util::gotoxy(55, 9);
-	cout << "|YOUR SCORE:       |\n";
-	util::gotoxy(55, 10);
-	cout << "|==================|\n";
-#else
-	util::gotoxy(55, 8);
-	cout << "╔══════════════════╗\n";
-	util::gotoxy(55, 9);
-	cout << "║YOUR SCORE:       ║\n";
-	util::gotoxy(55, 10);
-	cout << "╚══════════════════╝\n";
-#endif // _WIN32
+        if(stop) {
+            block.destroy();
+            gameOver = insertBlock(block);
+            if(gameOver) {
+                arrBlock.push_back(block);
+                printBlocks(topTemp);
+                save();
+                menu();
+                return;
+            }
+            score++;
+            if(score > bestScore) {
+                bestScore = score;
+            }
 
-    util::gotoxy(70, 9);
-    cout << Color::color(Color::Code::FG_WHITE);
-    cout << ((gameOver) ? arrBlock.size() - 2 : arrBlock.size() - 1);
-    if(gameOver) {
-            util::gotoxy(55, 11);
-        cout << "Any key to exit." << endl;
+            if(top == 7) {
+                topTemp--;
+            } else {
+                top--;
+                topTemp = top;
+            }
+            printBlocks(topTemp++);
+            color--;
+            if(color < 0) {
+                color = 14;
+            }
+
+            stop = false;
+            size = arrBlock[arrBlock.size() - 1].getSize();
+        }
     }
 }
 
 void Game::start() {
     init();
-    thread thread1(&runLR);
+    thread thread1(&logic);
     thread thread2(&getInput);
     thread1.join();
     thread2.join();
@@ -169,7 +251,7 @@ bool Game::insertBlock(Block &block) {
 
 void Game::goRight(Block &block, int top) {
     // Move block to right
-    for (int i = 0; i + block.getSize() <= SIZE_OF_TABLE && !stop; ++i) {
+    for (int i = 0; i + block.getSize() <= SIZE_OF_TABLE && !stop && !exitAndSave; ++i) {
 		util::sleep(speed);
         block.move(i, top);
         block.display();
@@ -177,14 +259,14 @@ void Game::goRight(Block &block, int top) {
 		util::remove(i - 1, top);
 #else
 		util::remove(i, top);
-#endif // _WIN32
+#endif // _WIN32 
 
     }
 }
 
 void Game::goLeft(Block &block, int top) {
     // Move block to left
-    for (int i = SIZE_OF_TABLE - block.getSize(); i >= 0 && !stop; --i) {
+    for (int i = SIZE_OF_TABLE - block.getSize(); i >= 0 && !stop && !exitAndSave; --i) {
         util::sleep(speed);
         block.move(i, top);
         block.display();

@@ -2,11 +2,8 @@
 #define STACK_GAME_H
 
 #include "util.h"
-#include <string>
 #include "block.h"
 #include "color.h"
-#include <vector>
-#include <thread>
 
 using namespace std;
 
@@ -18,14 +15,20 @@ static bool stop;
 static vector<Block> arrBlock;
 static bool gameOver;
 static int indexColor;
+static bool exitAndSave;
+static long bestScore;
+static long score;
+
 
 class Game {
 public:
+    static void menu();
+    static void save();
     static void getInput();
     static void init();
     static void printBlocks(int top);
     static void start();
-    static void runLR();
+    static void logic();
     static void goLeft(Block &block, int top);
     static void goRight(Block &block, int top);
     static bool removeExcess(Block &block);
