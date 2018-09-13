@@ -20,7 +20,6 @@ static bool exitAndSave;
 static long bestScore;
 static long score;
 
-
 class Game {
 public:
     static void menu();

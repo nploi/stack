@@ -189,7 +189,6 @@ void Game::logic() {
 }
 
 void Game::start() {
-	Game::init();
     thread thread1(&logic);
     thread thread2(&getInput);
     thread1.join();
