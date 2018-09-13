@@ -4,7 +4,6 @@
 #include <clocale>
 
 int main() {
-    util::clear();
     Game::init();
     Game::menu();
     return 0;

@@ -2,7 +2,7 @@
 
 void Game::menu() {
     util::clear();
-    printBlocks(15);
+    printBlocks((score <= 15 ? 15 : 5));
     cout << Color::color(Color::Code::FG_LIGHT_YELLOW);
     util::gotoxy(55, 11);
     cout << "1. Play new game";
@@ -57,14 +57,14 @@ int Game::getBestScore() {
 void Game::init() {
 	bestScore = getBestScore();
     score = 0;
-    indexColor = util::random(0, 12);
+    indexColor = util::random(0, 14);
     Block defaultBlock(SIZE, colors[indexColor]);
     defaultBlock.move(15, 15);
     arrBlock.clear();
     insertBlock(defaultBlock);
     printBlocks(15);
     stop = false;
-    speed = 30;
+    speed = 40;
     gameOver = false;
     exitAndSave = false;
 }
