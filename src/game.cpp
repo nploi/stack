@@ -24,7 +24,7 @@ void Game::menu() {
         cout << "[Best score: " << getBestScore() << "]";
 		util::gotoxy(10, 3);
 		cout << "Any key return menu";
-		getch();
+		getchar();
         Game::menu();
         break;
       case '3':
@@ -127,7 +127,7 @@ void Game::printBlocks(int top) {
     if(gameOver) {
         util::gotoxy(55, 12);
         cout << "Any key return menu." << endl;
-        getch();
+		getchar();
     }
 }
 
