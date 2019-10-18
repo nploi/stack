@@ -32,7 +32,7 @@ void Game::save() {
 }
 
 bool Game::isContinue() {
-    return !stop && !exitAndSave;
+    return !stop && !returnMenu;
 }
 
 int Game::getBestScore() {
@@ -61,7 +61,7 @@ void Game::init() {
     stop = false;
     speed = 40;
     gameOver = false;
-    exitAndSave = false;
+    returnMenu = false;
     counter = 0;
     printBlocks(MID);
 }
@@ -96,8 +96,8 @@ void Game::getInput() {
                 stop = true;
                 break;
             case ESC:
-               exitAndSave = true;
-               return;
+                returnMenu = true;
+                return;
         }
     } while (!gameOver);
 }
@@ -120,8 +120,8 @@ void Game::logic() {
             goRight(block, top);
         }
 
-        if(exitAndSave) {
-            save();
+        if(returnMenu) {
+            menu();
             return;
         }
 

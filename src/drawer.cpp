@@ -2,8 +2,6 @@
 
 void Drawer::menu(int x, int y) {
     std::cout << bold << fg_default;
-    // Util::gotoxy(x + 8, y++);
-    // std::cout << "MENU";
     Util::gotoxy(x, y++);
     std::cout << "+------------+";
     Util::gotoxy(x, y++);
@@ -51,5 +49,5 @@ void Drawer::help(int x, int y) {
     Util::gotoxy(x - 1, y++);
     std::cout << "「SPACE」 play";
     Util::gotoxy(x - 1, y++);
-    std::cout << "「ESC」   exit";
+    std::cout << "「ESC」   menu";
 }

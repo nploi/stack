@@ -19,7 +19,7 @@ static bool started;
 static vector<Block> arrBlock;
 static bool gameOver;
 static int indexColor;
-static bool exitAndSave;
+static bool returnMenu;
 static long bestScore;
 static long score;
 static long counter;
