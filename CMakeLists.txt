@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.9.2)
-project(stack)
+project(stacker)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -9,7 +9,9 @@ file(GLOB_RECURSE SOURCE main.cpp src/*.cpp)
 
 add_custom_target(
 	play
-	COMMAND make && ./stack
+	COMMAND make && ./stacker
 )
 
-add_executable(stack ${SOURCE})
+add_executable(stacker ${SOURCE})
+
+install(TARGETS stacker RUNTIME DESTINATION bin)

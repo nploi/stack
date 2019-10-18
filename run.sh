@@ -1,1 +1,1 @@
-cmake . && make -j4 && ./stack
+cmake . && make play

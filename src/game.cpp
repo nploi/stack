@@ -24,7 +24,7 @@ void Game::save() {
     std::ofstream outputFile;
     outputFile.open(FILE_NAME, ios::out);
     if(outputFile.fail()) {
-        cout << "Open file faild.";
+        cout << "Open file failed.";
         exit(1);
     }
     outputFile << bestScore;
@@ -37,17 +37,17 @@ bool Game::isContinue() {
 
 int Game::getBestScore() {
 	int score;
-	std::ifstream inputfile;
-	inputfile.open(FILE_NAME, ios::in);
-	if (inputfile.fail()) {
+	std::ifstream inputFile;
+    inputFile.open(FILE_NAME, ios::in);
+	if (inputFile.fail()) {
+        cout << "Created new file.";
 		std::ofstream create(FILE_NAME);
 		score = 0;
 		create.close();
+	} else {
+        inputFile >> score;
 	}
-	else {
-		inputfile >> score;
-	}
-	inputfile.close();
+    inputFile.close();
 	return score;
 }
 

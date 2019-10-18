@@ -5,7 +5,7 @@ CMakeCache.txt
 cmake_install.cmake
 CMakeFiles
 Stack
-stack
+stacker*
 demo.yml
 Win/Win.VC
 Win/Debug
@@ -15,3 +15,14 @@ build/*.o
 .score.txt
 compile_commands.json
 Makefile
+parts/
+prime/
+stage/
+*.snap
+install_manifest.txt
+# Snapcraft global state tracking data(automatically generated)
+# https://forum.snapcraft.io/t/location-to-save-global-state/768
+/snap/.snapcraft/
+
+# Source archive packed by `snapcraft cleanbuild` before pushing to the LXD container
+/*_source.tar.bz2
