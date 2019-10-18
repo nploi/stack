@@ -1,0 +1,18 @@
+language: cpp
+group: travis_latest
+
+git:
+  depth: 3
+  quiet: true
+
+os:
+  - linux
+  - osx
+  
+compiler:
+  - clang
+  - gcc
+
+script:
+  - cmake . && make -j4
+  - echo "2" | ./stack
