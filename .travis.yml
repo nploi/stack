@@ -15,4 +15,4 @@ compiler:
 
 script:
   - cmake . && make -j4
-  - echo "2" | ./stack
+  - echo "2" | ./stacker
